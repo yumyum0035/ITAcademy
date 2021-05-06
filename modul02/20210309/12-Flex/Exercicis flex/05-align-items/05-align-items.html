@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+<style>
+
+
+/*** ESTRUCTURA ***/
+
+/** 
+
+align-items - alineació eix secundari
+
+S'utilitza per alinear els ítems en l'eix secundari si hi ha espai suficient
+
+align-items: stretch; (per defecte) estirament
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: baseline; Linia de Base de les tipografies. Proveu activant selecció de germans
+
+**/
+
+main { 
+	
+	display: flex;
+
+	align-items: stretch; 
+
+    /*
+    
+	height: 400px; 
+    
+    */
+
+}
+
+/** Seleció de germans diferents
+
+section:nth-child(1) { font-size:1em; }
+section:nth-child(2) { font-size:2em; }
+section:nth-child(3) { font-size:1.2em; }
+section:nth-child(4) { font-size:0.8em; }
+
+**/
+
+
+/** Alineació del element seleccionat 
+
+align-self: auto | stretch | center | flex-start | flex-end | baseline
+    
+**/
+
+    
+/* 
+
+section:nth-child(3) { align-self: center; }
+
+*/
+
+
+
+/*** ESTRUCTURA sense relació amb flex box ***/
+
+body, section  { padding:20px; }
+
+
+/*** TIPOGRAFIA ***/
+
+body { font-family: Arial, Helvetica, sans-serif; }
+
+
+/*** ESTETICA ***/
+
+main { background: LightGray; }
+
+section {
+background: orange;
+border: 1px solid #000;
+}
+  
+</style>
+      
+  </head>
+
+ <body>
+    <main> 
+      
+      <section>  
+        Flex Item 1
+      </section>
+
+      <section>  
+        Flex Item 2
+      </section>
+
+      <section>  
+        Flex Item 3
+      </section>
+
+      <section>  
+        Flex Item 4
+      </section>
+
+    </main>
+
+  </body>  
+</html>

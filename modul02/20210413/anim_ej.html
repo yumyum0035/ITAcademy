@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+    
+
+    <title>ejercicio animacion</title>
+    
+    <meta name="description" content=" ">
+    
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    
+<style>
+    /*****  
+    Elementos reutilizables (colores, tipografías…)
+    Comentarios generales...
+        
+    *****/    
+    
+    /*****  TEST  
+        
+    * { outline: 1px solid orange; } 
+        
+    img[alt=""] { outline: 6px dashed orange; }
+    img:not([alt]) { outline: 6px dashed red; }  
+
+    *****/ 
+        
+    /*****  ESTRUCTURA *****/  
+
+    :root {
+        --width: 500px;
+        --height: 500px;
+        --colorA: #fed766; /* orange yellow crayola */
+        --colorB: #fe7f2d;
+        --colorC: #7A89C2;
+        --colorD: #7ee081;
+    }
+        
+    * { box-sizing: border-box; }
+
+    /*****  TIPOGRAFIA *****/  
+        
+    html { font-size: 10px; }    
+
+        
+    
+    /*****  ANIMACION *****/
+
+    div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: var(--colorA);
+        animation-name: viajero;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        
+        position: relative;
+    }
+
+    @keyframes viajero {
+        /* 12% { 
+            transform: translate(var(--width));
+            border-radius: 25%;
+            background-color: var(--colorB);
+        }
+        24% { 
+            transform: translate(var(--width), var(--height));
+            border-radius: 0;
+            background-color: var(--colorC);
+        }
+        36% { 
+            transform: translate(0, var(--height));
+            border-radius: 25%;
+            background-color: var(--colorD);
+        }
+        48% { 
+            transform: translate(0, 0);
+            border-radius: 50%;
+            background-color: var(--colorA);
+        }
+        60% { 
+            transform: translate(0, var(--height));
+            border-radius: 25%;
+            background-color: var(--colorB);
+        }
+        72% { 
+            transform: translate(var(--width), var(--height));
+            border-radius: 0;
+            background-color: var(--colorC);
+        }
+        84% { 
+            transform: translate(var(--width));
+            border-radius: 25%;
+            background-color: var(--colorD);
+        }
+        100% { 
+            transform: translate(0, 0);
+            border-radius: 50%;
+            background-color: var(--colorA);
+        } */
+
+        25% {
+            transform: translate(var(--width));
+            border-radius: 25%;
+            background-color: var(--colorD);
+        }
+
+        50% {
+            transform: translate(var(--width), var(--height));
+            border-radius: 0;
+            background-color: var(--colorC);
+        }
+
+        75% {
+            transform: translate(0, var(--height));
+            border-radius: 25%;
+            background-color: var(--colorB);
+        }
+
+        100% {
+            transform: translate(0, 0);
+            border-radius: 50%;
+            background-color: var(--colorA)
+        }
+    }
+</style>
+    
+    
+</head>
+<body>
+    <main>
+        <div></div>
+    </main>
+    
+</body>
+</html>

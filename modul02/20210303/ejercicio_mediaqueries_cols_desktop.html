@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+
+
+    <title>Columnes Desktop First</title>
+
+    <meta name="description" content=" ">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <style>
+        /*****  test
+            * { outline: 1px solid orange; } 
+                
+            img[alt=""] { outline: 6px dashed orange; }
+            img:not([alt]) { outline: 6px dashed red; }  
+        *****/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        h1, h2, p {
+            margin: 2rem 0;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            text-align: left;
+        }
+
+        main {
+            font-size: 0px;
+            padding: 0 1.4rem;
+        }
+
+        article {
+            display: inline-block;
+            width: 25%;
+            padding: 1.4rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        /*****  MEDIA QUERIES - Descktop First *****/
+
+        /* Escritorio normal, de 1200px o menos */ /* dos columnas en escritorio normal o menos */
+        @media (max-width: 1200px) {
+            article {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 992px) {} /* tablets */
+
+
+        /* Móviles de 768px o menos */ /* una columna en movil */
+        @media (max-width: 768px) {
+            main {
+                padding: 0;
+            }
+
+            article {
+                width: 100%;
+                padding: 1.4rem 0;
+            }
+
+            h1, p, h2 {
+                padding: 0 2.8rem;
+            }
+        }
+
+        @media (max-width: 576px) {} /* móviles pequeños */
+    </style>
+
+
+</head>
+
+<body>
+
+    <header><h1>Columnes Desktop First</h1>
+    </header>
+
+    <main>
+        <article>
+            <img src="img/lotus.jpg" alt="lotus">
+            <h2>Subtitol H2</h2>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+        </article>
+
+        <article>
+            <img src="img/lotus.jpg" alt="lotus">
+            <h2>Subtitol H2</h2>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+        </article>
+
+        <article>
+            <img src="img/lotus.jpg" alt="lotus">
+            <h2>Subtitol H2</h2>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+        </article>
+
+        <article>
+            <img src="img/lotus.jpg" alt="lotus">
+            <h2>Subtitol H2</h2>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+            <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+        </article>
+
+    </main>
+
+</body>
+
+</html>

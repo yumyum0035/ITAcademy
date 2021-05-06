@@ -1,0 +1,7 @@
+
+- directiva algo entre <> que no es nativo de html, por ejemplo <router-component>
+- [input]
+- (output) 
+- @ -> es un decorador (??) aplica logica a la clase que viene inmediatamente despues
+- para que OnInit, OnDestroy, etc funcionen hay que declararlos en los imports (imports OnInit, OnDestroy)
+- declarations (Components and Directives), imports Modules

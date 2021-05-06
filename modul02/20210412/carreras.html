@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+ 
+        <!-- reset -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' />
+ 
+        <!-- css -->
+        <style>
+            figure {
+                width: 100px;
+            }
+
+            figcaption {
+                text-align: center;
+                margin: 10px;
+            }
+
+            .coche img {
+                width: 100%;
+            }
+
+            main {
+                background-color: #cecece;
+                min-height: 100vh;
+            }
+
+            main:hover .coche { /****** no tocar *******/
+                transform: translate(calc(100vw - 200px));
+            }
+
+            main:hover .dos { /****** no tocar *******/
+                transform: translate(calc(100vw - 200px), 25px) rotate(135deg);
+            }
+
+            .coni {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: .1s;
+                transition-timing-function: linear;
+
+                filter:hue-rotate(180deg); /* cambia color de coche !! */
+            }
+
+            /* crear clase con nombre aqui abajo: */
+            .dos {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: .2s;
+                transition-timing-function: linear;
+
+                filter:hue-rotate(40deg);
+            }
+
+
+            .Jordi {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: .5s;
+                transition-timing-function: linear;
+                filter:hue-rotate(240deg);
+            }
+            
+            .lucas {
+                transition-property: transform;
+                transition-duration: 4s;
+                transition-delay: 0.1s;
+                transition-timing-function: linear;
+
+                filter: hue-rotate(205deg);
+            }
+            
+            .victoria {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: 0s;
+                transition-timing-function: ease-in;
+
+                filter:hue-rotate(250deg); 
+            }
+
+            .alexthesloth {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: 1s;
+                transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+
+                filter:hue-rotate(999deg);
+
+            }
+
+            /* .alexthesloth img {
+                filter: blur(2px);
+            } */
+
+            .alexp {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: .01s;
+                transition-timing-function:linear;
+
+                filter:hue-rotate(40deg); /* cambia color de coche !! */
+            }
+            
+            
+            .mo {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: .35s;
+                transition-timing-function:linear;
+                filter:hue-rotate(3000deg); /* cambia color de coche !! */
+    
+            }
+
+            .guillem {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: .03s;
+                transition-timing-function: linear;
+
+                filter:hue-rotate(240deg); 
+            }
+
+            .zdravko {
+                transition-property: transform;
+                transition-duration: 4s;
+                transition-delay: .2s;
+                transition-timing-function:  linear;
+            }
+
+            .alex {
+                transition-property: transform; 
+                transition-duration: 4s;
+                transition-delay: .01s;
+                transition-timing-function:step-end(1,end);
+
+                filter:hue-rotate(323deg); 
+            }
+
+            .MARC {
+                transition-property: transform;
+                transition-duration: 4s;
+                transition-delay: .6s;
+                transition-timing-function: ease-in ;
+            }
+
+        </style>
+ 
+        <title>Carrera Coches</title>
+    </head>
+    <body>
+        <main>
+            <figure class="coche coni">
+                <img src="img/coche.png" alt="">
+                <figcaption>Coni</figcaption>
+            </figure>
+
+            <figure class="coche dos">
+                <img src="img/coche.png" alt="">
+                <figcaption>Coche dos</figcaption>
+            </figure>
+
+            <figure class="coche Jordi">
+                <img src="img/coche.png" alt="">
+                <figcaption>Jordi</figcaption>
+            </figure>
+
+            <figure class="coche lucas">
+                <img src="img/coche.png" alt="">
+                <figcaption>Lucas</figcaption>
+            </figure>
+            
+            <figure class="coche victoria">
+                <img src="img/coche.png" alt="">
+                <figcaption>Victoria</figcaption>
+            </figure>
+
+            <figure class="coche alexthesloth">
+                <img src="img/coche.png" alt="">
+                <figcaption>Alexthesloth</figcaption>
+            </figure>
+
+            <figure class="coche alexp">
+                <img src="img/coche.png" alt="">
+                <figcaption>Alex P</figcaption>
+            </figure>
+
+            <figure class="coche mo">
+                <img src="img/coche.png" alt="">
+                <figcaption>Mo</figcaption>
+            </figure>
+
+            <figure class="coche guillem">
+                <img src="img/coche.png" alt="">
+                <figcaption>Guillem</figcaption>
+            </figure>
+
+            <figure class="coche zdravko">
+                <img src="img/coche.png" alt="">
+                <figcaption>Zdravko</figcaption>
+            </figure>
+
+            <figure class="coche alex">
+                <img src="img/coche.png" alt="">
+                <figcaption>Alex</figcaption>
+            </figure>
+
+            <figure class="coche MARC">
+                <img src="img/coche.png" alt="">
+                <figcaption>MARC</figcaption>
+            </figure>
+        </main>
+        
+    </body>
+</html>

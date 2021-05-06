@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+ 
+        <!-- reset -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' />
+ 
+        <!-- font awesome -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous' />
+ 
+        <!-- css -->
+        <style>
+            * { box-sizing: border-box; }
+
+            :root {
+                --accent-color: #fe7f2d; /* pumpkin */
+                --light-gray: #ddd;
+                --box-shadow: 0 5px 10px #ddd;
+                --helvetica: Helvetica, sans-serif;
+                --border: 1px solid var(--accent-color);
+            }
+            
+            html { font-size: 16px; }
+            
+            body {
+                font-family: var(--helvetica);
+                font-size: 1rem;
+            }
+            
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2rem; }
+
+            /* calc 
+                + Suma              calc( medida + medida )
+                - Resta             calc( medida - medida )
+                * Multiplicación    calc( medida * número )
+                / División          calc( medida / número )
+                
+                es posible anidarlos
+                calc(  calc() )
+                
+            */
+
+            p { 
+                background: var(--accent-color);
+                color: white;
+                font-size: 1.2rem;
+
+                padding: 20px; 
+                margin-bottom: 20px; 
+            }
+
+            .derecha, .izquierda { width: 200px; }
+
+            .derecha {
+                margin-left: calc(100% - 200px);
+            }
+
+            .izquierda {
+                margin-right: calc(100% - 200px);
+            }
+                
+            .central { 
+                margin-left: 200px; 
+                width: calc(100vw - 400px);
+            }
+            
+            /* media queries: mobile first */
+            @media (min-width: 480px) { } /* mobile */
+            
+            @media (min-width: 768px) { } /* tablet: 768 o más */
+            
+            @media (min-width: 1024px) { } /* desktop: 1024px o mas */
+        </style>
+ 
+        <title>Calc en css</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <p class="izquierda">200px</p>
+            <p class="central">Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+            <p class="derecha">200px</p>
+        </main>
+        <footer></footer>
+    </body>
+</html>

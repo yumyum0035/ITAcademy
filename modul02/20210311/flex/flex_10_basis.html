@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+<head>  
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+  <style>
+    /*** ESTRUCTURA ***/
+    /** flex-basis: ignora la medida inicial y le da a flex-grow/shrink una medida nueva
+      Amplada si l’eix principal es horitzontal (width)
+      Alçada si es vertical (heigth).  
+
+      Aquest valor es l’inicial, pot creixer o encongir si fem servir flex-shrink o flex-grow. 
+      Sobreescriu width i height.
+      Es la mida base que agafa flex-grow i flex-shrink.
+      Valor per defecte: Auto; La mida es en unitats (px, mm, pt… )
+
+    **/
+    html { font-size: 16px; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+
+    main { background: #cecece; } 
+
+    article {
+      display: flex;
+      padding: 5px;
+    }
+ 
+    section { 
+      text-align: center;
+      background: #9bc5e0;
+      color: white;
+      border: 1px solid #fff;
+      margin: 5px;
+      padding:20px;
+      flex-basis: 400px;
+      flex-wrap: nowrap;
+    }
+
+    section:nth-child(1) { flex-shrink:1; }
+    section:nth-child(2) { flex-shrink:2; }
+    section:nth-child(3) { flex-shrink:3; }
+    section:nth-child(4) { flex-shrink:4; }
+
+    section:hover {
+      background-color: #81dad5;
+      flex-shrink: 2;
+    }
+
+  </style>  
+
+</head>
+
+
+ <body>
+    <main> 
+      <article class="shrink">
+        <section>  
+          shrink:1
+        </section>
+
+        <section>  
+          shrink:2
+        </section>
+
+        <section>  
+          shrink:3
+        </section>
+
+        <section>  
+          shrink:4
+        </section>
+      </article>
+
+    </main>
+
+  </body>  
+</html>

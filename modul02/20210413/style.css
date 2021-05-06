@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+
+ 
+html { font-size: 16px; }
+ 
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+main {
+    margin: 200px auto;
+    width: 50vw;
+}
+
+div {
+    color: #ffa7c4;
+    text-align: center;
+
+    /* 
+    height: 100px;
+    width: 100px; 
+    border-radius: 50%;
+    */
+}
+
+.animated {
+    animation-name: thing; /* importante para identificar la keyframe que le corresponde */
+    animation-duration: 3s;
+    animation-iteration-count: infinite; /* infinite para que haga loop, numero para indicar numero de iteraciones */
+    animation-timing-function: linear;
+}
+
+@keyframes thing {
+    /* funciona un poco como los media queries, dentro de estas llaves de le dices que quieres que haga */
+    0% { transform: scale(1); }
+    25% { transform: rotate(90deg); }
+    50% { 
+        transform: scale(3) rotate(180deg);
+        color: #ff3e3e;
+    }
+    75% { transform: rotate(270deg); }
+    100% { transform: scale(1) rotate(360deg); }
+}

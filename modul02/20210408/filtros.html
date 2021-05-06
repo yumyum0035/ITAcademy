@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <title>FILTROS</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      main {
+        text-align: center;
+        padding-top: 40px;
+      }
+      div,
+      p {
+        margin-bottom: 20px;
+      }
+      img {
+        width: 500px;
+      }
+      .blur {
+        filter: blur(5px);
+      }
+      .brillo {
+        filter: brightness(50%);
+      }
+      .contraste {
+        filter: contrast(50%);
+      }
+      .sepia {
+        filter: sepia(50%);
+      }
+      .dropshadow {
+        filter: drop-shadow(0px 10px 30px white);
+      }
+      .sombra {
+        background-color: black;
+      }
+      .set {
+        filter: sepia(50%) contrast(200%) saturate(40%);
+      }
+      .rotate {
+        filter: hue-rotate(90deg);
+      }
+      .opacidad {
+        filter: opacity(20%);
+      }
+      .invertir {
+        filter: invert(70%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <p>FILTRO - DESENFOCAR- en px</p>
+        <img class="blur" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div>
+        <p>FILTRO - BRILLO- en %</p>
+        <img class="brillo" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div>
+        <p>FILTRO - CONTRASTE- en %</p>
+        <img class="contraste" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div>
+        <p>FILTRO - SEPIA - en %</p>
+        <img class="sepia" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div class="sombra">
+        <p>
+          FILTRO - dropshadow SOMBRA - desp vertical, desp.horizontal
+          desenfocque, color
+        </p>
+        <img class="dropshadow" src="img/humo.png" alt="" />
+      </div>
+      <div class="sombra">
+        <p>FILTRO - Set</p>
+        <img class="set" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div class="">
+        <p>FILTRO - hou rotate</p>
+        <img class="rotate" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div class="">
+        <p>FILTRO - opacidad</p>
+        <img class="opacidad" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div class="">
+        <p>FILTRO - invertir</p>
+        <img class="invertir" src="img/ovejero.jpeg" alt="" />
+      </div>
+      <div class="">
+        <p>FILTRO -</p>
+        <img class="" src="img/ovejero.jpeg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>

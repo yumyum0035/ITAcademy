@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<!-- 
+    Sentit d'escriptura
+    dir=" "   ltr - rtl - auto 
+    fa / فارسی
+-->
+
+<html dir="auto" lang="ca"> 
+    
+  <head>  
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    
+<style>
+      
+      
+
+/*** ESTRUCTURA ***/
+
+/**
+
+Definim l'element flexbox contenidor
+
+No cal definir els flex items, son els fills directes del contenidor.
+
+Si no es defineix l'eix principal, per defecte es l'horitzontal.
+
+display:flex;
+display:inline-flex;
+
+**/
+main { 
+  width: 700px;
+  background: LightGray;
+}
+
+article {
+  margin: 5px;
+  display: inline-flex; 
+}
+    
+/*** ESTRUCTURA sense relació amb flex box ***/
+body  {padding:20px;}
+section { padding: 20px; }
+
+
+/*** TIPOGRAFIA ***/
+body { font-family: Arial, Helvetica, sans-serif; }
+
+/*** ESTETICA ***/
+section {
+  background: orange;
+  border: 1px solid #000;
+}
+
+</style>
+      
+</head>
+
+ <body>
+    <article> 
+      
+      <section>  
+        Flex Item 1
+      </section>
+
+      <section>  
+        Flex Item 2
+      </section>
+
+      <section>  
+        Flex Item 3
+      </section>
+    
+      
+    </article>
+
+    <article>
+      <section>  
+        Flex Item 4
+      </section>
+      <section>  
+        Flex Item 5
+      </section>
+      <section>  
+        Flex Item 6
+      </section>
+    </article>
+  </body>  
+</html>

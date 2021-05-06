@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+<head>  
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+  <style>
+    /*** ESTRUCTURA ***/
+    /*** justify-content
+      justify-content - alineació al eix principal
+
+
+      justify-content: flex-start; (per defecte)
+      justify-content: flex-end;
+      justify-content: center;
+      justify-content: space-between; espai entre elements
+      justify-content: space-evenly; espai al voltant dels elements
+      justify-content: space-around; espai uniform entre elements (Nou) 
+
+
+      Mira la diferencia entre:
+
+      justify-content: flex-end; 
+      flex-direction: row-reverse;
+
+    **/
+    html { font-size: 16px; }
+    * { box-sizing: border-box; }
+    main { background: #cecece; } 
+
+    article {
+      display: flex;
+      padding: 5px;
+    }
+
+    article.flex-start { /* alinea al principio del eje principal (horizontal en este caso) */
+      justify-content: flex-start;
+    }
+
+    article.flex-end { /* alinea al principio del eje principal (horizontal en este caso) */
+      justify-content: flex-end;
+    }
+
+    article.center { /* alinea al centro */
+      justify-content: center;
+    }
+
+    article.space-between { /* espacio entre elementos sin espacio al margen */
+      justify-content: space-between; 
+    }
+
+    article.space-evenly { /* reparte los elementos al centro con espacio igual entre elementos y márgenes */
+      justify-content: space-evenly; 
+    }
+
+    article.space-around { /* reparte los elementos al centro, pero deja menos espacio a los margenes */
+      justify-content: space-around; 
+    }
+
+    section { /* si no se especifica el ancho de la section, el tamaño se adaptará al texto */
+      /* width:400px; */
+      background: #9bc5e0;
+      border: 1px solid #fff;
+      color: white;
+      margin: 5px;
+    }
+   
+    /*** ESTRUCTURA sense relació amb flex box ***/
+    body, section  { padding:20px; }
+
+    /*** TIPOGRAFIA ***/
+    body { font-family: Arial, Helvetica, sans-serif; }
+
+  </style>  
+
+</head>
+
+
+ <body>
+    <main> 
+      <article class="flex-start">
+        <section>  
+          Flex Item 1: flex-start
+        </section>
+
+        <section>  
+          Flex Item 2: flex-start
+        </section>
+
+        <section>  
+            Flex Item 3: flex-start
+        </section>
+
+        <section>  
+          Flex Item 4: flex-start
+        </section>
+      </article>
+
+      <article class="flex-end">
+        <section>  
+          Flex Item 1: flex-end
+        </section>
+
+        <section>  
+          Flex Item 2: flex-end
+        </section>
+
+        <section>  
+            Flex Item 3: flex-end
+        </section>
+
+        <section>  
+          Flex Item 4: flex-end
+        </section>
+      </article>
+
+      <article class="center">
+        <section>  
+          Flex Item 1: center
+        </section>
+
+        <section>  
+          Flex Item 2: center
+        </section>
+
+        <section>  
+            Flex Item 3: center
+        </section>
+
+        <section>  
+          Flex Item 4: center
+        </section>
+      </article>
+
+      <article class="space-between">
+        <section>  
+          Flex Item 1: space-between
+        </section>
+
+        <section>  
+          Flex Item 2: space-between
+        </section>
+
+        <section>  
+            Flex Item 3: space-between
+        </section>
+
+        <section>  
+          Flex Item 4: space-between
+        </section>
+      </article>
+
+      <article class="space-evenly">
+        <section>  
+          Flex Item 1: space-evenly
+        </section>
+
+        <section>  
+          Flex Item 2: space-evenly
+        </section>
+
+        <section>  
+            Flex Item 3: space-evenly
+        </section>
+
+        <section>  
+          Flex Item 4: space-evenly
+        </section>
+      </article>
+
+      <article class="space-around">
+        <section>  
+          Flex Item 1: space-around
+        </section>
+
+        <section>  
+          Flex Item 2: space-around
+        </section>
+
+        <section>  
+            Flex Item 3: space-around
+        </section>
+
+        <section>  
+          Flex Item 4: space-around
+        </section>
+      </article>
+    </main>
+
+  </body>  
+</html>

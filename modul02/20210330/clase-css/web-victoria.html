@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+    <title>Document</title>
+    <meta name="description" content=" ">
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+<style>
+        /*****  
+    Elementos reutilizables (colores, tipografías…)
+    Comentarios generales...
+    *****/ 
+
+      
+    * { outline: 1px solid orange; 
+    box-sizing: border-box;} /*****  TEST
+    img[alt=""] { outline: 6px dashed orange; }
+    img:not([alt]) { outline: 6px dashed red; }  
+    *****/ 
+
+   
+   
+
+
+    /*****  TIPOGRAFIA *****/  
+    html { font-size: 16px; }
+    
+    body {
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; }
+
+
+    h3, header, div{
+        min-height: 100px;
+    }
+
+    /*****  ESTETICA *****/  
+    nav{ 
+        position: fixed;
+        background: pink;
+        height: 400px;
+        width: 30px;
+        left: 10px;
+        top: 30%;
+        z-index: 100;
+    }
+
+    .container{
+        height: 100vh;
+    }
+
+    .menuVideos{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        height: 30px;
+
+    }
+
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100px;
+        background: lightblue;
+    }
+
+    .grid-3{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        min-height: 100px;
+        background: lightblue;
+    }
+    /*****  MEDIA QUERIES *****/ 
+    
+    .powered{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        min-height: 100px;
+        background: lightgoldenrodyellow;
+    }
+
+
+</style>
+</head>
+<body>
+    
+    <header>
+        cabecera
+    </header>
+
+    <nav>
+        <ul>
+            <li>A</li>
+            <li>R</li>
+            <li>O</li>
+            <li>U</li>
+            <li>N</li>
+            <li>D</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">Zoom out</div>
+        <div>
+           <div>Texto</div>
+           <div>Pantalla animada</div>
+           <div>Marcas</div> 
+        </div>
+        
+    </main>
+    
+    <section>
+        <div>
+            <div class="container">1</div>
+            <div class="menuVideos">
+                <button>Video 1</button>
+                <button>Video 2</button>
+                <button>Video 3</button>
+                <button>Video 4</button>
+            </div>
+            <div>VIDEOS</div>
+        </div>
+        <div class="grid-2">
+            <div>parte 1</div>
+            <div>parte 2</div>
+        </div>
+        <div class="grid-3">  
+            <div>parte 1</div>
+            <div>parte 2</div>
+        </div>
+        <div class="grid-2">
+            <div>parte 1</div>
+            <div>parte 2</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Powered by</h3>
+        <div class="powered">
+            <div>Grid 1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>

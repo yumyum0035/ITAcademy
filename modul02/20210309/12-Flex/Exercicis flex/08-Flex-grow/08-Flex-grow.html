@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+<style>
+
+
+/*** ESTRUCTURA ***/
+
+/** flex-grow
+
+especifica quant creixerà l'element en relació amb la resta dels elements flexibles dins del mateix contenidor.
+Aquest número es una fracció del espai buit (afegeix mes text a la primera secció per comprobar-ho).
+
+
+flex-grow: 0; Valor per defecte ( no creix )
+flex-grow: 1; 
+2, 3, 4, etc... ( admet decimals -> 0.5 )
+
+**/
+
+main {  display: flex; }
+
+section:nth-child(1) { flex-grow: 0; }
+section:nth-child(2) { flex-grow: 0; }
+section:nth-child(3) { flex-grow: 0; }
+section:nth-child(4) { flex-grow: 0; }
+
+
+
+
+/*** ESTRUCTURA sense relació amb flex box ***/
+
+body, section  { padding:20px; }
+
+
+/*** TIPOGRAFIA ***/
+
+body { font-family: Arial, Helvetica, sans-serif; }
+
+
+/*** ESTETICA ***/
+
+main { background: LightGray; }
+
+section {
+background: orange;
+border: 1px solid #000;
+}
+  
+</style>
+      
+</head>
+
+ <body>
+    <main> 
+      
+      <section>  
+        Flex Item
+      </section>
+
+      <section>  
+        Flex Item
+      </section>
+
+      <section>  
+        Flex Item
+      </section>
+
+      <section>  
+        Flex Item
+      </section>
+
+    </main>
+
+  </body>  
+</html>

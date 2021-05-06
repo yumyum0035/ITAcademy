@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+
+    <title>Document</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <style>
+        /*****  
+    Comentarios generales,
+    
+    Elementos reutilizables (Ej: paleta de colores, tipografías…)
+    
+    
+    
+    
+    
+    
+*****/
+        /*****  TEST  *****/
+    
+* { outline: 1px solid orange; }    
+
+
+        /*****  ESTRUCTURA *****/
+        * {box-sizing: border-box;}
+        header, div, footer {
+            min-height: 100px; 
+            padding: 10px; 
+            margin-bottom: 10px;
+            }
+
+        .destacado {
+            display: grid; 
+            grid-template-columns: 1fr 2fr;
+            }
+
+        .cuatro {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .seis {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+        }
+
+        .destacado2{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        /*****  TIPOGRAFIA *****/
+        /*****  ESTETICA *****/
+    </style>
+</head>
+
+<body>
+    <header> 
+Cabecera
+    </header>
+    <div class="destacado"> 
+        <div>Destacado</div>
+        <div></div>
+    </div>   
+    <div class="cuatro">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="seis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="cuatro">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="destacado2"> 
+        <div>Destacado</div>
+        <div></div>
+    </div> 
+    <footer>
+        Pie
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        
+        <!-- reset -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' />
+        
+        <!-- font awesome -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous' />
+        
+        <!-- css -->
+        <style> /* css */
+            /*****  test  *****/
+            * { outline: 1px solid #ff3985; margin: 5px !important; padding: 10px !important; }
+            
+            /*
+            img[alt=''] { outline: 6px dashed lightcoral; }
+            img:not([alt]) { outline: 6px dashed tomato; }
+            */
+            
+            * { box-sizing: border-box; }
+            
+            html { font-size: 16px; }
+            
+            body {
+                font-family: Helvetica, sans-serif;
+                font-size: 1rem;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(4, auto);
+            }
+            
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .menu {
+                cursor: pointer;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            main {
+                background: #b8deeb;
+            }
+            
+            footer {
+                background: lightcyan;
+            }
+            
+            .footer-top {
+                display: none;
+            }
+            
+            aside {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            aside :nth-child(1) {
+                grid-column: 1 / 3;
+            }
+            
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2rem; }
+            
+            /* media queries: mobile first */
+            @media (min-width: 480px) { } /* mobile */
+            
+            @media (min-width: 768px) { /* tablet: 768 o más */
+                header {
+                    justify-content: flex-start;
+                }
+            
+                .menu { display: none;}
+                nav { display: block; }
+            
+                .services {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .services :nth-child(1) {
+                    grid-column: 1 / 3;
+                }
+            
+                aside {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            
+                aside :nth-child(1) {
+                    grid-column: 1 / 4;
+                }
+            
+                .footer-top {
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                }
+            } 
+            
+            @media (min-width: 1024px) { /* desktop: 1024px o mas */
+            
+                .services {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            
+                .services :nth-child(1) {
+                    grid-column: 1 / 2;
+                }
+            
+                aside {
+                    display: grid;
+                    grid-template-columns: repeat(4, auto);
+                }
+            
+                aside :nth-child(1) {
+                    grid-column: 1 / 2;
+                }
+            }
+        </style>
+        
+        <title>Basic Agency Services - estructura web</title>
+        <!-- https://basicagency.com/services -->
+    </head>
+
+    <body>
+        <header>
+            <div>logo</div>
+            <div class="menu">menu</div>
+            <nav>
+                <a href="">work</a>
+                <a href="">about</a>
+                <a href="">news</a>
+                <a href="">thinking</a>
+                <a href="">pledge</a>
+                <a href="">careers</a>
+                <a href="">contact</a>
+            </nav>
+        </header>
+        <main>
+            <article class="hero">
+                easy to understand. impossible to ignore.
+            </article>
+            <section class="services">
+                <div>branded ecommerce</div>
+                <div>google store</div>
+                <div>design within reach</div>
+            </section>
+            <section class="services">
+                <div>digital products + services</div>
+                <div>fender academy</div>
+                <div>the webby awards</div>
+            </section>
+            <section class="services">
+                <div>websites + platforms</div>
+                <div>silver oak</div>
+                <div>desktop metal</div>
+            </section>
+            <section class="services">
+                <div>branding + advertising</div>
+                <div>nerd skincare</div>
+                <div>brixton</div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-top">
+                <div>B</div>
+                <div>we collaborate...</div>
+            </div>
+            <aside>
+                <div>stay in the now</div>
+                <div>social</div>
+                <div>iniciatives</div>
+                <div>offices</div>
+            </aside>
+            <div>(part of dept)</div>
+        </footer>
+    </body>
+</html>

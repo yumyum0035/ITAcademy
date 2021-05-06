@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+<style>
+  /*** ESTRUCTURA ***/
+
+  /**
+
+    Aconseguir que el peu es quedi abaix encara que no hagi suficien text per omplir el viewport
+    Si hi ha més contingut que la mida del viewport funciona normalment
+
+    // per el body:
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    //per el footer:
+
+    margin-top: auto;
+
+    Per que cal el margin-top: auto ? 
+        
+    https://css-tricks.com/the-peculiar-magic-of-flexbox-and-auto-margins/
+
+  **/
+
+  body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer { 
+    margin-top: auto;
+  }
+
+  /* ESTRUCTURA sense relació amb flex box */
+  header, main, footer, p { padding: 20px; width: auto;}
+
+  /***** TIPOGRAFIA *****/
+  body { font-family: Arial, Helvetica, sans-serif; }
+
+  /***** ESTETICA *****/
+
+  header, footer { background: orange; }
+  p {text-align:justify;}
+  h1, header p, footer p {text-align: center;}
+      
+</style>      
+
+</head>
+
+ <body>
+    <header>
+        <p>Aixó es la capçelera</p>
+    </header>
+    
+    <main> 
+      
+      <h1> Aixo es el contingut principal</h1>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ligula, inceptos praesent condimentum curabitur leo ultrices aenean, pharetra sem vestibulum libero luctus platea pulvinar. Phasellus natoque mus tincidunt tristique ultricies potenti, nam conubia nullam lobortis quisque nascetur vivamus, tortor laoreet gravida massa tellus diam, cursus pellentesque nec mattis duis. Integer maecenas ornare nisl a potenti ac curae eleifend scelerisque ut risus luctus, pharetra sem ridiculus viverra iaculis duis rhoncus nam vehicula rutrum.</p> 
+      
+      <p>Ridiculus cubilia semper porttitor feugiat scelerisque placerat fames bibendum, ac mauris erat consequat purus leo condimentum, proin habitasse ultricies potenti integer pretium curabitur. Sociis tincidunt egestas lacus phasellus euismod nullam gravida, tortor justo malesuada potenti eu donec semper imperdiet, mi condimentum risus sagittis tempor volutpat. Quis fames egestas penatibus non varius dignissim feugiat lobortis dui euismod cras, donec aliquet vitae risus phasellus aptent duis ultricies placerat accumsan, diam orci at cursus scelerisque aliquam vel a congue quisque.</p>
+      
+      <p>Gravida dictum facilisi blandit augue purus urna rutrum platea praesent, senectus eleifend porta ligula ante quis convallis fermentum odio, erat arcu aliquam pulvinar enim risus lobortis suscipit. Pharetra erat mollis odio nulla molestie ultrices interdum lectus ligula, quis natoque pulvinar donec taciti ad montes litora aptent morbi, class dis vel bibendum commodo vulputate lacinia nec. Nec vel accumsan conubia blandit enim natoque eu nisl, maecenas fermentum turpis ligula fames mus mollis netus cursus, ullamcorper laoreet morbi dapibus integer sagittis lobortis. A conubia scelerisque rhoncus ornare turpis convallis augue, ullamcorper blandit arcu sociosqu platea leo id metus, tellus dui posuere suscipit sapien volutpat.</p>
+      
+      <p>Penatibus eget fringilla platea dictum pretium cursus hendrerit feugiat vehicula sapien in felis, non molestie quisque arcu sociosqu mus suspendisse integer tempus sed porta. Pharetra cras duis ornare parturient lobortis quisque sociis vel elementum, scelerisque nostra sem feugiat felis posuere pellentesque lectus, proin ad nam convallis pretium sagittis suscipit tortor. Sapien elementum lacinia nisi curabitur massa inceptos rutrum justo potenti sem, nibh dui nam proin id enim dis vestibulum imperdiet.</p>
+      
+      <p>Aliquam mattis odio ad interdum eu nullam, aliquet maecenas nascetur morbi vulputate sociosqu, erat faucibus leo turpis porttitor. Conubia egestas iaculis facilisi nec hendrerit quam mattis justo dignissim platea metus massa, condimentum vehicula in congue pellentesque purus augue volutpat nam sodales. Accumsan ut lacinia donec malesuada sagittis conubia sollicitudin ultrices placerat libero eget fames tristique, aptent diam imperdiet lacus sed rutrum gravida risus pharetra blandit laoreet.</p>
+      
+      <p>Purus neque nec lectus convallis habitant metus nisi, auctor pellentesque suspendisse vitae sollicitudin sociosqu mollis, quisque iaculis dictum nunc feugiat malesuada. Cursus aptent suspendisse dictum montes facilisi magna eros maecenas nunc duis rhoncus, enim molestie facilisis interdum velit sociis libero aliquam et tempus sem etiam, habitasse natoque pharetra dapibus quisque fames fringilla convallis sapien sociosqu. Commodo sem senectus montes sollicitudin mauris parturient hendrerit vivamus dapibus, vitae purus proin diam ornare sed posuere volutpat leo felis, scelerisque sociis platea elementum mi himenaeos velit natoque. Leo hac habitant et sodales fusce mus id quisque accumsan elementum, penatibus mattis vel himenaeos quam turpis euismod nullam quis, conubia pellentesque cursus nec cras primis congue praesent lobortis.</p>
+      
+      <p>At condimentum nisi velit viverra sociosqu cum duis lacus accumsan, sagittis pellentesque auctor tincidunt arcu varius ac hac blandit, mollis feugiat conubia tortor class pretium lacinia porttitor. Rutrum tristique varius vehicula suscipit tellus nisi sollicitudin, aenean sed ut enim vulputate condimentum potenti montes, habitasse nulla viverra ac hendrerit placerat. Fames turpis egestas sed massa vivamus in feugiat taciti, proin eu potenti porta lacinia velit nibh, diam duis facilisi convallis at magnis leo. Velit luctus feugiat dignissim montes ultricies ante, porttitor bibendum natoque risus vehicula sed, phasellus facilisis enim ad accumsan.</p>
+      
+      <p>Cubilia potenti curabitur penatibus et aptent nulla ultrices curae sociosqu vehicula neque nisl, nec libero tempus pharetra integer ut dictum interdum massa ornare purus. Blandit praesent mi fames penatibus primis porta ac sollicitudin, pulvinar augue magna feugiat tempus sagittis proin eleifend malesuada, in torquent aliquam habitant non eros sociosqu.</p>
+      
+      <p>Eleifend morbi tempor pharetra litora iaculis blandit molestie lacus inceptos fringilla, dictum hac augue risus ridiculus aenean lacinia tortor. Lobortis facilisis condimentum convallis eros ligula praesent eget habitasse et, vivamus torquent dis euismod non erat placerat sodales nibh natoque, facilisi id feugiat varius dui gravida accumsan venenatis. Ante lectus phasellus facilisi tellus sem id neque diam rhoncus, sollicitudin cubilia sociosqu inceptos litora semper molestie quisque eros nunc, vitae accumsan cursus tincidunt mollis vivamus pharetra malesuada. Quam condimentum est magna volutpat lacinia eu molestie ornare vehicula ligula, lobortis sociis non euismod iaculis montes dictumst egestas phasellus.</p>
+      
+      <p>Dui ridiculus ultricies tristique id penatibus fusce arcu non platea odio mauris aliquet, rutrum sollicitudin massa at cras tempus nostra facilisis vel a aptent ante fames, eros pretium velit euismod vestibulum neque natoque convallis elementum sed himenaeos. Habitant class mollis ut suscipit parturient conubia ligula dignissim felis non habitasse curabitur varius urna, aptent torquent pretium congue dictumst tempus et eros vel ac cursus a. Vivamus sagittis imperdiet dui natoque euismod platea montes himenaeos a cum curabitur egestas, condimentum dictumst velit ornare eros conubia vel lectus in venenatis. Imperdiet congue a felis aliquam neque hendrerit etiam egestas tellus rutrum, tristique tortor gravida eleifend ridiculus duis dui habitant eros, tempor inceptos platea molestie vivamus nostra natoque vestibulum malesuada.</p>
+      
+      <p>Curae tempor purus nibh sollicitudin mi ornare elementum, varius ut interdum ligula blandit netus, cursus odio torquent vitae massa dictum. Imperdiet lacus justo leo facilisi turpis lacinia nascetur orci quam, eros morbi consequat rutrum cubilia tempor dui aliquet, netus cras congue venenatis ridiculus aptent sociis vestibulum. Est quam nostra senectus cursus sed facilisis tristique, pellentesque vel eu ante ornare et tincidunt eros, sagittis eget mauris pulvinar platea potenti.</p>
+      
+      <p>Quam laoreet nullam primis cum lectus varius at, blandit mattis pharetra nunc curae. Nascetur fermentum sagittis proin aptent iaculis tempor aenean nullam, ultricies elementum placerat viverra id semper class, hendrerit praesent blandit montes netus at feugiat. Cras venenatis ac mauris facilisi blandit bibendum dis molestie vivamus ad arcu sed, elementum metus commodo lobortis duis in viverra primis natoque ut varius tortor, ligula justo curae faucibus eros taciti quisque augue vehicula fringilla eu. Proin parturient nisl aptent ullamcorper posuere vestibulum interdum, egestas ornare laoreet accumsan magnis quam hac ac, suscipit tortor lectus dignissim varius urna.</p>
+
+   
+    </main>
+
+    <footer>
+        <p>Aixó es el peu</p>
+    </footer>
+
+  </body>  
+</html>

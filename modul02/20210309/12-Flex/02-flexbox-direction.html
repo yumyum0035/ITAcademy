@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+    <head>  
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+        <style>
+            /*** ESTRUCTURA ***/
+            /**  Direcció del elements
+
+                flex-direction: row; (per defecte)
+                flex-direction: row-reverse;
+                flex-direction: column;
+                flex-direction: column-reverse;
+            **/
+            * {
+                box-sizing: border-box;
+            }
+
+            main { 
+                width: 100%;
+                height: 100vh;
+                background: #ececec;
+            }
+
+            article.inline {
+                display: inline-flex;
+                flex-direction: row;
+            }
+
+            article.flex {
+                display: flex;
+                flex-direction: column;
+            }
+
+            /*** ESTRUCTURA sense relació amb flex box ***/
+            body, section  { padding:20px; }
+
+
+            /*** TIPOGRAFIA ***/
+            body { font-family: Helvetica, sans-serif; }
+
+
+            /*** ESTETICA ***/
+            section {
+                background: #90d8c2;
+                border: 1px solid #fff;
+                color: white;
+                margin: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <article class="inline">
+                <section>  
+                    <p>inline-flex item 1: row + height: 500px</p>
+                    <p>si cambio height por width, ocupará todo el espacio en horizontal y nada en vertical</p>
+                </section>
+
+                <section>  
+                    inline-flex item 2: row + height: 500px
+                </section>
+
+                <section>  
+                    inline-flex item 3: row + height: 500px
+                </section>
+            </article>
+            <article class="flex">
+                <section>  
+                    <p>flex item 1: column + width: 500px</p>
+                    <p>Si cambio width por height ocupará todo el espacio en horizontal</p>
+                </section>
+
+                <section>  
+                    flex item 2: column + width: 500px
+                </section>
+
+                <section>  
+                    flex item 3: column + width: 500px
+                </section>
+            </article>
+        </main>
+    </body>  
+    
+</html>

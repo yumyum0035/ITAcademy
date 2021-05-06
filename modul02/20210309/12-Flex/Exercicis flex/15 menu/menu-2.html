@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="ca"> 
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8"> 
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+     <title>Menu flex</title> 
+      
+<style>
+/***
+    
+ menu hamburguesa solo css
+ https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/  
+    
+ ***/   
+    
+    
+    
+/*** ESTRUCTURA - Mobile First ***/
+
+ /* Show Hamburger */
+  #page-nav label {
+    display: block;
+    color: #fff;
+    background: #000;
+    font-style: normal;
+    font-size: 1.4em;
+    padding: 0.5rem;
+  }
+
+#hamburger { display: none; }
+    
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+
+    
+nav ul  {
+      display: flex;
+      flex-direction: column;
+      }          
+
+nav { padding-bottom: 2rem; }
+
+/* convertir un elemant a (inline) en block serveix per extendre la seva area de click  */
+nav li a { display: block;
+  padding: .5rem 1rem;
+}
+  
+         
+/***** TIPOGRAFIA *****/
+
+html { 
+    
+    font-family: Arial, Helvetica, sans-serif; 
+    font size: 18px; 
+    
+    /* Suavitza les fonts */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+         
+    }
+         H1 { font-size: 3rem; }
+         H2 { font-size: 2rem; }
+         P { font-size:  1rem; }
+
+
+/***** ESTETICA *****/
+
+nav ul { background: #333; }
+
+nav li { 
+    border-bottom:1px solid white; 
+    background: royalblue; 
+    }
+     
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+         
+nav li a:hover {
+  background: orange;
+  color: white;
+}     
+ 
+    
+/***** Media Querie - si es mes ample de 600px *****/
+    
+@media screen and (min-width: 600px) {
+
+/*** Estructura ***/
+    
+/* [ON BIG SCREEN] */
+/* Wrapper */
+
+/* Hide Hamburger */
+#page-nav label { display: none; }
+
+#page-nav ul, #page-nav input:checked ~ ul { display: flex; }
+
+nav.esquerra ul { flex-direction: row;  justify-content: flex-start; }
+
+
+/*** Estetica ***/
+    
+nav li { border-left:1px solid white; border-bottom: none; }
+     
+    
+}      
+            
+</style>     
+    
+</head>
+
+<body>
+ <!-- [NAVIGATION BAR] -->
+    <nav class="esquerra" id="page-nav">
+      <!-- [THE HAMBURGER] -->
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+        
+  <ul>
+    <li><a href="#">1-Index</a></li>
+    <li><a href="#">2-Qui som nosaltres</a></li>
+    <li><a href="#">3-Serveis</a></li>
+    <li><a href="#">4-Contacte</a></li>
+  </ul>
+</nav>
+
+
+    
+</body>
+ 
+</html>

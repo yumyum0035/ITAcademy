@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+
+
+    <title>Document</title>
+
+    <meta name="description" content=" ">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <style>
+        /*****
+            Elementos reutilizables (colores, tipografías…)
+            Comentarios generales...
+
+        *****/
+        /***** TEST
+            * { outline: 1px solid orange; }
+
+            img[alt=""] { outline: 6px dashed orange; }
+            img:not([alt]) { outline: 6px dashed red; }
+        *****/
+        /***** ESTRUCTURA *****/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        main {
+            height: 100vh;
+            padding: 2rem;
+        }
+        /***** TIPOGRAFIA *****/
+        
+        html {
+            font-size: 10px;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        /***** ESTETICA *****/
+        
+        main {
+            background: pink;
+        }
+        
+        .tablet {
+            background: red;
+            color: white;
+        }
+        /***** MEDIA QUERIES - Mobile First *****/
+        /* hacer que se vea siempre no tablet excepto en la medida de tablet, que tiene que mostrar tablet. usar  */
+        
+        .tablet {
+            display: none;
+        }
+        
+        @media all and (min-width: 768px) and (max-width: 992px) {
+            main {
+                display: none;
+            }
+            .tablet {
+                display: block;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <h1>Esto no se ve en tablet :O</h1>
+    </main>
+    <main class="tablet">
+        <h1>Esto solo se ve en tablet! :)</h1>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+    <title>Mascara 1</title>  
+    <meta charset="UTF-8"> 
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+       
+<style>
+      
+
+          
+/* ESTRUCTURA */
+
+    header { 
+        max-width: 1200px; 
+        margin: 3rem auto; 
+        padding: 3rem;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        }
+
+    h1 { padding: 3rem; } 
+        
+    img{ 
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        filter: grayscale(1);
+        }
+    h1{ grid-area: 1 / 1 / 2 / 2;
+        filter: grayscale(0);}
+
+
+/***** TIPOGRAFIA *****/
+    
+    html { font-size: 20px; font-family: 'Anton', sans-serif; }
+    
+    h1 { 
+        font-size: 40rem; 
+        text-transform: uppercase; 
+        text-align: center;
+        font-weight: bold;
+        line-height: 8.8rem;  
+        letter-spacing: -.4rem;
+    }
+
+/***** ESTETICA *****/
+    
+    body { background: #000;}
+    
+   /* .imagenfondo{           
+       background-image: url("girl-2696947_1920.jpeg");
+       background-size: cover;
+        height: 500px;
+    }
+    */
+    h1 {
+        
+    /* mascara */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+
+
+    
+    /* fondo */
+   background-image: url("girl-2696947_1920.jpeg"); 
+    background-size: cover;
+        
+    /* para navegadores que no soportan el efecto */
+     color: azure;   
+    
+    }
+    
+</style>
+      
+</head>
+
+ <body>
+    <header> 
+
+        <img src="img/cielo.jpg" alt="">
+        <h1>        <i class="fab fa-apple"></i>
+        </h1>
+
+    </header>
+  </body>  
+</html>

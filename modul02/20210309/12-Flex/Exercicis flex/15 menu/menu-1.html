@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="ca"> 
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8"> 
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+     <title>Menu flex</title> 
+      
+<style>
+
+/*** ESTRUCTURA - Mobile First ***/
+         
+nav ul  {
+      display: flex;
+      flex-direction: column;
+      }          
+
+nav { padding-bottom: 2rem; }
+
+/* convertir un elemant a (inline) en block serveix per extendre la seva area de click  */
+nav li a { display: block;
+  padding: .5rem 1rem;
+}
+  
+    p {padding: 10px 0;}  
+    
+/*** TIPOGRAFIA ***/
+
+html { 
+    
+    font-family: Arial, Helvetica, sans-serif; 
+    font size: 18px; 
+   
+
+         
+    }
+         H1 { font-size: 3rem; }
+         H2 { font-size: 2rem; }
+         P { font-size:  1rem; text-align: center;}
+
+
+/***** ESTETICA *****/
+
+nav ul { background: #333; }
+
+nav li { 
+    border-bottom:1px solid white; 
+    background: royalblue; 
+    }
+     
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+         
+nav li a:hover {
+  background: orange;
+  color: white;
+}     
+ 
+    
+/***** Media Querie - si es mes ample de 600px *****/
+    
+@media screen and (min-width: 600px) {
+
+/*** Estructura ***/
+
+nav ul { flex-direction: row;  }
+        
+nav.esquerra ul { justify-content: flex-start; }  
+    
+nav.centrat ul { justify-content: center; }  
+    
+nav.dreta ul { justify-content: flex-end; }  
+    
+/** flex per defecte es 0 1 auto; **/
+    
+/* flex: 1 0 0;  / flex: 1;  */
+nav.igual li { flex: 1 0 0;  text-align: center; } 
+
+/*  flex: 1 1 auto; / flex: auto; */    
+nav.proporcional li { flex: auto; text-align: center;  }
+
+
+/*** Estetica ***/
+    
+nav li { border-left:1px solid white; border-bottom: none; }
+     
+    
+}      
+            
+</style>     
+    
+</head>
+
+<body>
+<p>Esquerra</p>      
+<nav class="esquerra">
+  
+  <ul>
+    <li><a href="#">1-Index</a></li>
+    <li><a href="#">2-Qui som nosaltres</a></li>
+    <li><a href="#">3-Serveis</a></li>
+    <li><a href="#">4-Contacte</a></li>
+  </ul>
+</nav>
+<p>Centrat</p>
+<nav class="centrat">
+  <ul>
+    <li><a href="#">1-Index</a></li>
+    <li><a href="#">2-Qui som nosaltres</a></li>
+    <li><a href="#">3-Serveis</a></li>
+    <li><a href="#">4-Contacte</a></li>
+  </ul>
+</nav>
+<p>Dreta</p>   
+<nav class="dreta">
+  <ul>
+    <li><a href="#">1-Index</a></li>
+    <li><a href="#">2-Qui som nosaltres</a></li>
+    <li><a href="#">3-Serveis</a></li>
+    <li><a href="#">4-Contacte</a></li>
+  </ul>
+</nav>  
+<p>Igual</p>    
+<nav class="igual">
+  <ul>
+    <li><a href="#">1-Index</a></li>
+    <li><a href="#">2-Qui som nosaltres</a></li>
+    <li><a href="#">3-Serveis</a></li>
+    <li><a href="#">4-Contacte</a></li>
+  </ul>
+</nav>    
+<p>Proporcional</p>    
+<nav class="proporcional">
+  <ul>
+    <li><a href="#">1-Index</a></li>
+    <li><a href="#">2-Qui som nosaltres</a></li>
+    <li><a href="#">3-Serveis</a></li>
+    <li><a href="#">4-Contacte</a></li>
+  </ul>
+</nav>     
+
+</body>
+ 
+</html>

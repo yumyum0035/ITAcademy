@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Montana Shop Barcelona - estructura web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <!-- http://www.montanashopbarcelona.com/ -->
+    <style>
+    *{
+        box-sizing:border-box;
+    }
+    
+    header div{
+        background-color: orange;
+        text-align:center;
+        padding:20px;
+        color:white;
+        text-transform:uppercase;
+        height:100px;
+    }
+
+    footer div {
+        background-color: orange;
+        text-align:center;
+        padding:20px;
+        color:white;
+        text-transform:uppercase;
+        height:100px;
+    }
+
+     main div{
+         background-color:rgb(116, 116, 255);
+         margin:5px;
+         text-align:center;
+         color:white;
+         padding:20px;
+         font-size:40px;
+     }
+
+     .direccion1 {
+         display:grid;
+         grid-template-columns: repeat(3, 1fr);
+         background-color: orange;
+     
+     }
+
+     .direccion1 div:nth-child(2){
+         background-color:red;
+         grid-column: span 2;
+   
+     }
+
+     .direccion2 {
+         display:grid;
+         grid-template-columns: repeat(3, 1fr);
+         background-color: orange;
+    
+     }
+
+     .direccion2 div:nth-child(1){
+         background-color:red;
+         grid-column: span 2;
+    
+     }
+
+     .taller{
+         display:grid;
+         grid-template-columns: repeat(2, auto);
+         background-color: orange;
+     }
+
+     .equipo{
+         display:grid;
+         background-color:green;
+         grid-template-columns: repeat(4, auto);
+     }
+
+     .venta{
+         min-height:100px;
+         background-color: red;
+     }
+    
+
+    </style>
+</head>
+
+
+
+<body>
+
+<header>
+<div>Header</div>
+</header>
+
+<main>
+
+<div class="slider">Slider</div>
+
+<div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis non molestiae. Maxime iusto corporis, aliquid exercitationem dolores magnam maiores harum. Vero dicta cum rem odio sit nam veritatis perferendis.</p></div>
+
+<div class="direccion1">
+    <div></div>
+    <div class="segundohijo"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div class="mapa"></div>
+
+<div class="direccion2">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div class="taller">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div class="venta"></div>
+
+<div class="equipo">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+  
+</main>
+
+<footer>
+<div>Footer</div>
+</footer>
+
+</body>
+
+</html>

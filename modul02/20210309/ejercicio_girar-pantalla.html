@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+        
+
+        <title>Girar Pantalla</title>
+        
+        <meta name="description" content=" ">
+        
+        <!-- reset css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+            
+        <style>
+            /*****  
+            Elementos reutilizables (colores, tipografías…)
+            Comentarios generales...
+                
+            *****/    
+            /*****  TEST  
+                
+            * { outline: 1px solid orange; } 
+                
+            img[alt=""] { outline: 6px dashed orange; }
+            img:not([alt]) { outline: 6px dashed red; }  
+
+            *****/ 
+            
+                
+            /*****  ESTRUCTURA *****/  
+            * { box-sizing: border-box; }
+
+            main, iframe { width: 100vw; height: 100vh;}
+
+            h1 { margin: 0 auto; 
+                padding: 6vh 0;
+            }
+
+            /*****  TIPOGRAFIA *****/  
+                
+            html {
+                font-size: 10px;
+                font-family: sans-serif;
+                text-align: center;
+            }    
+
+            h1 { font-size: 5.4vh;
+                font-weight: bold;
+                writing-mode: vertical-rl;
+            }
+
+            .girar { font-size: 8vh; font-weight: bold;}
+
+            p { font-size: 3vh; }    
+
+
+            /*****  ESTETICA *****/  
+            body { background: black; color: white;}
+            
+            /*****  MEDIA QUERIES *****/  
+            /* horizontal  */
+            @media (orientation: landscape) {
+                .horizontal { display: block; }
+                .vertical { display: none; }
+            }
+
+            /* vertical */
+            @media (orientation: portrait) {
+                .horizontal { display: none; }
+                .vertical { display: block; }
+            }
+        </style>
+    
+    </head>
+    <body>
+
+        <main class="vertical">
+            <h1>Do you love vertical videos?</h1>
+            <p class="girar">&#x21bb</p>
+            <p>Please turn the screen</p>
+        </main>
+
+        <main class="horizontal">
+            <iframe src="https://www.youtube.com/embed/whOO7Jnalfk?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </main>
+
+    </body>
+</html>

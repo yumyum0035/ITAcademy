@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>    
+    <title>Títol de la WEB</title> 
+    <meta charset="UTF-8">
+    <meta name="title" content="Títol de la WEB">
+    <meta name="description" content="Descripció de la pàgina">
+      
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+      
+      
+<!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <style>
+        /***** EL MEU CSS  *****/
+
+        body {padding: 20px;background:pink; text-align: center;}
+
+        /* img {background: #fff;} */
+
+        /*
+        object-fit 
+
+
+        object-fit: fill; (por defecto)
+        object-fit: contain; (coloca toda la imagen de manera proporcional)
+        object-fit: cover; (Llena toda el àrea y la imtagen puede no estar completa)
+        object-fit: none; (no se redimensiona la imagen)
+        object-fit: scale-down; (adapta toda la imagen, similar a contain)
+
+
+
+        object-position: "posición horizontal" posición vertical";
+
+        per defecto centrado (50% 50%)
+
+        valores: px % / left center right / top center bottom
+
+
+        */
+        
+        img {   
+            width: 30vw;
+            height: 600px;
+            background: orange;  
+        }
+
+        .transparente { 
+            object-fit: contain;
+            object-position: right top;
+        }
+
+        .llena {
+            object-fit: cover;
+            object-position: 66% top;
+        }
+
+      </style>
+</head>
+
+<body>
+    <picture>
+    <img class="llena" src="../../20210329/ejercicio-desktop-first/img/three.jpg" alt="mar" >
+    <img class="transparente" src="microphones-1491020.png" alt="mar">
+    </picture>
+</body>  
+</html>

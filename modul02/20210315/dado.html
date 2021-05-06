@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<!--  -->
+<html dir="ltr" lang="ca"> 
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8"> 
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <style>    
+        /* datos
+            dado 100px   
+            punto  20px
+        */
+
+        * {
+            box-sizing: border-box;
+            /* outline: 1px solid green; */
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+            flex-flow: wrap row;
+        }
+
+        div {
+            display: flex;
+        }
+
+        .dado {
+            width: 100px;
+            height: 100px;
+            background: #ff5353;
+            border-radius: 15px;
+            margin: 50px;
+        }
+
+        .punto  {
+            background: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .uno {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dos {
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        .dos .punto:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .tres {
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 5px;
+        }
+
+        .tres .punto:nth-child(2) {
+            align-self: center;
+        }
+
+        .tres .punto:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .cuatro {
+            justify-content: space-between;
+            padding: 3px;
+        }
+
+        .cuatro div {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cinco {
+            justify-content: space-between;
+            padding: 3px;
+        }
+
+        .cinco div {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cinco div:nth-child(2) {
+            justify-content: center;
+        }
+
+        .seis {
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: wrap column;
+        }
+    </style>    
+
+</head>
+
+<body>
+    <main>
+        <div class="dado uno">
+            <div class="punto"></div>
+        </div>
+        <div class="dado dos">
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+        <div class="dado tres">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+        <div class="dado cuatro">
+            <div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+        <div class="dado cinco">
+            <div class="top-row">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+            <div>
+                <div class="mid-row punto"></div>
+            </div>
+            <div class="bottom-row">
+                <div class="punto"></div>
+                <div class="punto"></div>
+            </div>
+        </div>
+        <div class="dado seis">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+    </main>
+</body>  
+</html>

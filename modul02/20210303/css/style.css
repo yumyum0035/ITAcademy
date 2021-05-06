@@ -1,0 +1,79 @@
+/*****  test
+    * { outline: 1px solid orange; } 
+        
+    img[alt=""] { outline: 6px dashed orange; }
+    img:not([alt]) { outline: 6px dashed red; }  
+*****/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1, h2, p {
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-align: left;
+}
+
+main {
+    font-size: 0px;
+    padding: 0 1.4rem;
+}
+
+article {
+    display: inline-block;
+    width: 25%;
+    padding: 1.4rem;
+}
+
+img {
+    width: 100%;
+}
+
+/*****  MEDIA QUERIES - Descktop First *****/
+
+/* Escritorio normal, de 1200px o menos */ /* dos columnas en escritorio normal o menos */
+@media (max-width: 1200px) {
+    article {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {}
+
+
+/* Móviles de 768px o menos */ /* una columna en movil */
+@media (max-width: 768px) {
+    main {
+        padding: 0;
+    }
+
+    article {
+        width: 100%;
+        padding: 1.4rem 0;
+    }
+
+    h1, p, h2 {
+        padding: 0 2.8rem;
+    }
+}
+
+@media (max-width: 576px) {}

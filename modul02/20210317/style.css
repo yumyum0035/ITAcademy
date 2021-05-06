@@ -1,0 +1,93 @@
+* { box-sizing: border-box; }
+
+html { font-size: 18px; }
+
+body {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif; 
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+
+p {
+    text-align: center;
+    padding: 15px;
+}
+
+nav { 
+    background: #303030;
+}
+
+div {
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+a:link, a:active, a:visited {
+    background: #ff4444;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+a:hover {
+    background: #ff448c;
+    text-decoration: none;
+}
+
+.esquerra {
+    justify-content: flex-start;
+}
+
+.dreta {
+    justify-content: flex-end;
+}
+
+.centre {
+    justify-content: center;
+}
+
+.proporcional {
+    display: flex;
+}
+
+.proporcional a {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 1px;
+}
+
+.igual {
+    display: flex;
+}
+
+.igual a {
+    text-align: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 0 1px;
+}
+    
+/***** Media Query - si es mes ample de 600px *****/
+@media screen and (max-width: 600px) {
+    nav { 
+        background: transparent;
+    }
+
+    a:link, a:active, a:visited {
+        margin: 0 0 2px 0;
+    }
+
+    .esquerra, .dreta, .centre {
+        flex-flow: nowrap column;
+    }
+
+    .dreta {
+        text-align: right;
+    }
+
+    .centre {
+        text-align: center;
+    }
+} 

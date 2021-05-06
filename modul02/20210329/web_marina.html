@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+    <title>Document</title>
+    <meta name="description" content=" ">
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+<style>
+        /*****  
+    Elementos reutilizables (colores, tipografías…)
+    Comentarios generales...
+    *****/ 
+
+      
+    * { outline: 1px solid orange; } /*****  TEST
+    img[alt=""] { outline: 6px dashed orange; }
+    img:not([alt]) { outline: 6px dashed red; }  
+    *****/ 
+
+
+    /*****  ESTRUCTURA *****/  
+    * { box-sizing: border-box; }
+
+    header, footer, div, body{
+        display: grid;
+        min-height: 100px;
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+
+    .rejilla{
+        grid-template-columns: repeat(12, 1fr);
+
+    }
+    
+    .col_3{ grid-column: span 3; }
+
+    .col_6{ grid-column: span 6; }
+
+    .col_9{ grid-column: span 9; }
+
+    .col_12{ grid-column: span 12; }
+   
+
+
+    /*****  TIPOGRAFIA *****/  
+    html { font-size: 10px; }   
+
+
+
+    /*****  ESTETICA *****/  
+
+
+
+    /*****  MEDIA QUERIES *****/ 
+    
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <div>vb</div>
+        <div></div>
+    </header>
+    <div>ggggggggggggggggggggg</div>
+    <div></div>
+
+    <div class="rejilla">
+        <div class="col_6"></div>
+        <div class="col_6"></div>
+        <div class="col_12"></div>
+        <div class="col_6"></div>
+        <div class="col_6"></div>
+    </div>
+
+    <div class="rejilla">
+        <div class="col_12"></div>
+        <div class="col_3"></div>
+        <div class="col_9"></div>
+        <div class="col_9"></div>
+        <div class="col_3"></div>
+        <div class="col_12"></div>
+    </div>
+
+    <footer></footer>
+
+
+</body>
+</html>

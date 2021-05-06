@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+
+
+:root {
+    /* colors */
+    --accent-color: #69b6cf; /* maximum blue */
+    --side-color: #8f95d3; /* blue shell */
+    --black: #202020;
+    --light-gray: #ddd;
+ 
+    /* utlities */
+    --box-shadow: 0 5px 10px var(--light-gray);
+    --border: 1px solid var(--accent-color);
+ 
+    /* fonts */
+    --helvetica: Helvetica, sans-serif;
+}
+ 
+html { font-size: 16px; }
+ 
+body {
+    font-family: var(--helvetica);
+    font-size: 1rem;
+}
+ 
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+
+ 
+a:link, a:active, a:visited {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+ 
+a:hover { color:var(--side-color); }
+
+ 
+/* media queries: mobile first (bootstrap media queries) */
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up) (sm) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) (md) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) (lg) */
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up) (xl) */
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up) (xxl) */
+@media (min-width: 1400px) { }

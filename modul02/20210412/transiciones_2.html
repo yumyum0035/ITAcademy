@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+    
+
+    <title>Document</title>
+    
+    <meta name="description" content=" ">
+    
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    
+<style>
+/*****  
+Elementos reutilizables (colores, tipografías…)
+Comentarios generales...
+    
+*****/    
+    
+    
+/*****  TEST  
+    
+* { outline: 1px solid orange; } 
+    
+img[alt=""] { outline: 6px dashed orange; }
+img:not([alt]) { outline: 6px dashed red; }  
+
+*****/ 
+    
+    
+/*****  ESTRUCTURA *****/  
+    
+* { box-sizing: border-box; }
+    
+header {
+    width:100vw;
+    height: 100px;
+}
+
+h1 { padding: 2rem 0;}
+
+/*****  TIPOGRAFIA *****/  
+    
+html { 
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+}    
+h1 { font-size: 3rem; text-align: center;}   
+    
+/*****  ESTETICA *****/  
+
+    header { 
+        background: #007bff;
+        color: #a3d0ff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    /* h1 { color: #a3d0ff;} */
+
+/*****  TRANSICION *****/
+
+    header:hover { 
+        height: 100vh; 
+        background: #12041f;
+        color: white;
+    } 
+
+/* linear - ease - ease-in - ease-out - ease-in-out - cubic-bezier(n,n,n,n) -  steps(4, end)  */
+    /* header { 
+        transition:  ; 
+
+        transition-property: height background color; /* obligatorio/
+        transition-duration: 1s; /* obligatorio/
+        transition-delay: .2s;
+        transition-timing-function: linear;
+
+    }  */
+
+    header { 
+        /* transition:  ;  */
+
+        transition-property: height background color; /* obligatorio */
+        transition-duration: 1s; /* obligatorio */
+        transition-delay: .2s;
+        transition-timing-function: linear;
+
+    } 
+
+
+</style>
+    
+    
+</head>
+<body>
+    <header>
+        <h1>transition</h1>
+    </header>
+    
+</body>
+</html>

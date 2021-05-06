@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+<style>
+
+
+/*** ESTRUCTURA ***/
+
+
+
+main {  display: flex;  }
+    
+
+/** flex
+
+flex (short-end)
+Drecera, en aquest ordre, de:
+flex-grow (creixement) - valor per defecte 0
+flex-shrink (encoixement) - valor per defecte 1
+flex-basis (mida base) - valor per defecte auto (la mida del objecte)
+    
+Normalment es fan servir las 3 propietas  alhora.
+
+
+
+flex: 0 1 auto; No creix pero pot reduir-se ( Valor per defecte )
+
+flex: none; es equivalent a Flex: 0 0 auto; Ni creix i ni es redueix.
+
+flex: auto;  es equivalent a Flex: 1 1 auto; Creix o  s'encongeix a la mida de cada element.
+
+flex: 2; es equivalent a Flex: 2 0 0;
+
+flex: 1 0 auto ;  Creix pero no pot reduirse a menys de la seva mida original ( 300px)
+    
+flex: 1 0 200px;   Creix pero no pot reduirse a menys de 200px 
+    
+**/
+    
+
+section:nth-child(2) { 
+
+    /** pading que anula el pading general de "section" */
+    padding: 0px; 
+    
+	width:300px;
+	height: 300px; 
+    
+    
+    flex: 0 1 auto;  
+
+}
+
+    
+ p { padding:20px; }
+
+
+/*** ESTRUCTURA sense relació amb flex box ***/
+
+body, section  { padding:20px; }
+
+
+/*** TIPOGRAFIA ***/
+
+body { font-family: Arial, Helvetica, sans-serif; }
+
+
+/*** ESTETICA ***/
+
+main { background: LightGray; }
+
+section {
+background: orange;
+border: 1px solid #000;
+}
+
+section:nth-child(2) {
+background: red;
+color: white;
+}
+    
+</style> 
+      
+</head>
+
+ <body>
+    <main> 
+      
+      <section>  
+        Flex Item 1
+      </section>
+
+      <section>  
+        <p>Flex Item 2</p>
+      </section>
+
+      <section>  
+        Flex Item 3
+      </section>
+
+      <section>  
+        Flex Item 4
+      </section>
+
+    </main>
+
+  </body>  
+</html>

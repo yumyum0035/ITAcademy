@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: Helvetica, sans-serif;
+    background:#ececec;
+    padding: 20px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px; /* grid gap : row column; */
+}
+
+div { 
+    padding: 20px;
+    background: #9bbfcf;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+/* media queries: mobile first */
+@media (min-width: 480px) { } /* mobile */
+
+@media (min-width: 768px) { /* tablet: 768 o más */
+    .dogs { grid-area: dogs; }
+    .recent { grid-area: recent; }
+    .special { grid-area: special; }
+    .left { grid-area: aside-left; }
+    .right { grid-area: aside-right;}
+    .sports { grid-area: sports; }
+
+    body {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(4, 2fr);
+        grid-template-areas:"dogs dogs" 
+                            "recent aside-right"
+                            "special aside-left" 
+                            "sports sports";
+    }
+}
+
+@media (min-width: 1024px) { /* desktop: 1024px o mas */
+    body { 
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: repeat(4, 2fr);
+        grid-template-areas:"dogs dogs dogs sports" 
+                            "dogs dogs dogs aside-right"
+                            "recent special special aside-right" 
+                            "recent aside-left aside-left aside-left";
+    }
+}

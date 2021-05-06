@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+        
+
+        <title>Transformaciones</title>
+        
+        <meta name="description" content=" ">
+            
+        <!-- reset css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+            
+        <style>   
+            /*****  TEST  
+                
+            * { outline: 1px solid orange; } 
+                
+            img[alt=""] { outline: 6px dashed orange; }
+            img:not([alt]) { outline: 6px dashed red; }  
+
+            *****/ 
+                
+                
+            /*****  ESTRUCTURA *****/  
+                
+            * { box-sizing: border-box; }
+            
+            .cuadro { 
+                width: 200px;
+                height: 200px;
+                background: orange;
+                margin: 30px auto;
+            }    
+
+                
+            /*****  TIPOGRAFIA *****/  
+                
+            html { 
+                font-size: 20px; 
+                text-align: center;
+            }    
+            
+            h1 { 
+                font-size: 2rem; 
+                margin: 2rem;
+            }    
+            
+            h2 { 
+                font-size: 2rem;
+                margin-bottom: 1.4rem;
+            }
+
+            p { margin-bottom: 1.4rem; }
+            
+            img { text-align: left; }   
+            
+            /*****  transformaciones *****/  
+
+            .translate:hover {
+                /* transform: translateX(100px); /* eje horizontal */
+                /* transform: translateY(100px) /* eje vertical */
+                /* transform: translate(150px, 50px);  */
+                /* ^ primero X, luego Y, si solo se pone uno, se hace solo en la X */
+                transform: translate(150px, -25px) rotate(45deg);
+                /* hace varias a la vez ^ */
+            }
+
+            .rotate:hover {
+                transform: rotate(45deg);
+            }
+             
+            .scale:hover {
+                transform: scale(.5);
+            }
+
+            .skew:hover {
+                transform: skewX(45deg);
+            }
+                
+        </style>
+        
+    </head>
+    <body>
+        <h1>Transformaciones 2D</h1>
+        <img src="coche.png" alt="coche"> 
+        <div class="cuadro"></div> 
+    <div>
+        <h2>Translate </h2>
+        <p> ( horizontal, vertical )</p>
+        <img class="translate" src="coche.png" alt="coche"> 
+        <div class="translate cuadro"></div> 
+    </div>
+    <div>
+        <h2>Rotate</h2>
+        <p>de 0 a 360deg</p>
+        <img class="rotate" src="coche.png" alt="coche"> 
+        <div class="rotate cuadro"></div> 
+        
+    </div>   
+    <div>
+        <h2>Scale</h2>
+        <p>( anchura, altura )</p>
+        <p>scaleX(anchura) scaleY(altura)</p>
+        <img class="scale" src="coche.png" alt="coche"> 
+        <div class="scale cuadro"></div>   
+    </div>  
+    <div>
+        <h2>skew  - Sesgar</h2>
+        <p>de 0 a 360deg</p>
+        <p>skewX Sesgar en el eje X  - skewY Sesgar en el eje Y</p>
+        <img class="skew" src="coche.png" alt="coche">
+        <div class="skew cuadro"></div>    
+    </div>      
+    <div>
+        <h2>Matrix - shortend</h2>
+        <p>scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()</p>
+        <img class="matrix" src="coche.png" alt="coche">  
+        <div class="matrix cuadro"></div>
+    </div>     
+        
+        
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>    
+    <title>Viewport</title> 
+    <meta charset="UTF-8">
+    <meta name="title" content="Títol de la WEB">
+    <meta name="description" content="Descripció de la pàgina">
+    <!-- VIEWPORT   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />     
+
+    <!-- css -->
+    <style>
+      /**---------------- Estructura ----------------**/
+      body { padding: 20px; }
+
+      header, main, footer {
+              padding: 20px;
+              margin-bottom: 20px;
+      }
+
+      h1, h2, h3, h4, h5, h6, p {margin: 0 0 20px 0;}
+          
+      img { width: 100%; margin: 20px 0;}
+          
+      footer { margin-bottom: 0px; }
+          
+          
+      /**---------------- Tipografia ----------------**/
+      /* canvia la mida de la tipografia html 2vw 2vh 2vmin 
+          FORMULA PARA LA GESTION DEL TAMAÑO DE LA TIPOGRAFIA:
+          font size: ( fuente mínima + (fuente maxima - fuente mínima) * ( (100vw - anchura mínima del viewport) / (anchura máxima del viewport - anchura mínima del viewport) ) )
+      */
+          
+      /*html { font-size: calc(5vw - 70px); } Controlamos la tipografia al maximo o al minimo*/
+      html { font-size: calc(12px + calc( 24 - 12) * calc( calc( 100vw - 300px  ) / calc( 1600 - 300 ))); } 
+
+      h1 { font-size: 3rem; }
+      h2 { font-size: 2rem; }
+      p  { font-size: 1.2rem; } 
+      
+      h1, h2, footer { text-align: center; }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+      <h1>Viewport</h1>
+   
+    </header> 
+
+    <main> 
+  
+        <h2>Subtitol H2</h2>
+        
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+
+        <h2>Subtitol H2</h2>
+        
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+        
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+
+    </main>
+
+     
+
+     
+  </body>  
+</html><!DOCTYPE html>
+<html lang="ca"> 
+  <head>    
+    <title>Viewport</title> 
+    <meta charset="UTF-8">
+    <meta name="title" content="Títol de la WEB">
+    <meta name="description" content="Descripció de la pàgina">
+
+<!-- VIEWPORT   -->
+      
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+      
+<!-- RESET CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />     
+  
+      
+<style>
+
+/**---------------- Estructura ----------------**/
+
+
+body { padding: 0 20px; }
+
+
+h1, p {padding: 20px 0 0 0;}
+    
+footer { height: 100px;}    
+
+footer p { padding: 10px;} 
+    
+main { min-height: calc(100vh - 100px); }    
+    
+/**---------------- Tipografia ----------------**/
+
+    
+html { font-size: 18px; }
+    
+    
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+p  { font-size: 1.2rem; } 
+   
+h1, h2, footer { text-align: center; }   
+    
+    
+/**---------------- Estetica ----------------**/   
+    main { background: pink; }
+    footer { background: orange;}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+    <main> 
+  
+        <h1>Titol H1</h1>
+        
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+
+    </main>
+
+    <footer> <p>Aixo es el footer</p></footer>
+     
+
+     
+  </body>  
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yin Yang</title>
+    
+    <style> /* css ahead*/
+        * {
+            box-sizing: border-box;
+        }
+
+        html { font-size: 18px; }
+
+        body {
+            font-size: 1rem;
+            font-family: Helvetica, sans-serif; 
+            background: #ff5656;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .white {
+            background: white;
+            height: 512px;
+            width: 256px;
+            border-radius: 256px 0 0 256px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            
+        }
+
+        .black {
+            background: black;
+            height: 512px;
+            width: 256px;
+            border-radius: 0 256px 256px 0;
+        }
+
+        .white-mid {
+            height: 256px;
+            width: 128px;
+            border-radius: 0 128px 128px 0;
+            background: white;
+            
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .black-mid {
+            height: 256px;
+            width: 128px;
+            border-radius: 128px 0 0 128px;
+            background: black;
+            
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+
+        .black-dot {
+            height: 64px;
+            width: 64px;
+            background: black;
+            border-radius: 32px;
+
+            margin-left: -32px;
+        }
+
+        .white-dot {
+            height: 64px;
+            width: 64px;
+            background: white;
+            border-radius: 32px;
+
+            margin-right: -32px;
+            z-index: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="white">
+            <article class="black-mid">
+                <span class="white-dot"></span>
+            </article>
+        </div>
+        <div class="black">
+            <article class="white-mid">
+                <span class="black-dot"></span>
+            </article>  
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+      <style>
+        /** Definim l'element Grid Layout contenidor
+
+        No cal definir els grids items, son els fills directes del contenidor.
+
+        display:grid;
+        display:inline-grid;
+
+        per fer les divisions de filas i columnes podem fer servir qualsevol unitat o diverses alhora
+        auto px % em rem vw vh vmin vmax fr
+
+        **/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        main {  
+            background: rgb(236, 236, 236);
+            display: grid; 
+            /*grid-template-columns: 1fr 2fr 3fr 2fr 2fr; // auto indica el tamaño de la columna, se puede poner pixels, rems, fr, etc */
+            grid-template-columns:repeat(4, 1fr); /* sirve para no escribir 6 veces la misma unidad, solo si son iguales.*/
+            grid-template-rows:minmax(200px,1fr); 
+        }
+
+        body { 
+            font-family: Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        div {
+            padding: 20px;
+            background: #9bbfcf;
+            color: white;
+            border-radius: 2px;
+            margin: 5px;
+            text-align: center;
+        }
+      </style>
+</head>
+
+ <body>
+    <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>  
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+    </main>
+
+  </body>  
+</html>

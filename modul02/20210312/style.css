@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    line-height: 100vh;
+    width: 100%;
+}
+
+.mint {
+    background-color: #baebda;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: #baebda;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        flex-flow: wrap column;
+    }
+
+    .container {
+        line-height: 50vh;
+    }
+}

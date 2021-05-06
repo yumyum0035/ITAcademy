@@ -1,0 +1,160 @@
+<DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, Maximum-scale=3'>
+        <title>Document</title>
+        <meta name='description' content=' '>
+        <!-- reset css -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'/>
+        <style>
+        /*****  
+        Elementos reutilizables (colores, tipografías…)
+        Comentarios generales...
+        *****/ 
+        /*****  TEST *****/
+        * { outline: 1px solid orange; } 
+        img[alt=''] { outline: 6px dashed orange; }
+        img:not([alt]) { outline: 6px dashed red; } 
+        /*****  ESTRUCTURA *****/
+        * { box-sizing: border-box; 
+        margin-bottom: 10px;
+        padding: 10px;
+        }
+        header{
+            position: fixed;
+        }
+        nav ul {
+            display: flex;
+        }
+        .horizontal{
+            /* width: 95vw; */
+        }
+        .vertical{
+            flex-direction: column;
+            height: 95vh;
+            background-color: rgba(134, 86, 86, 0.2);
+        }
+        section{
+            min-height: 100px;
+        }
+        .hero{
+            height: 200px;
+        }
+        .contenedor{
+            overflow: auto;
+            height: 250px;
+        }
+        .contenedor h2{
+            min-height: 50px;
+        }
+        .contenedor div{
+            display: block;
+            height: 200px;
+            width: 150px;
+            white-space: nowrap;
+        }
+        div{
+            min-height: 100px;
+        }
+        .blog{
+            display: grid;
+            grid-template-areas: 
+            "patchnotes patchnotes blog1 blog2 blog3"
+            "patchnotes patchnotes blog4 blog4 blog4"
+            ;
+        }
+        .patchnotes{
+            grid-area: patchnotes;
+        }
+        .blog1{
+            grid-area: blog1;
+        }
+        .blog2{
+            grid-area: blog2;
+        }
+        .blog3{
+            grid-area: blog3;
+        }
+        .blog4{
+            grid-area: blog4;
+        }
+        /*****  TIPOGRAFIA *****/
+        html { font-size: 10px; }
+        /*****  ESTETICA *****/
+        /*****  MEDIA QUERIES *****/
+        </style>
+        <title>Mobalytics - estructura web</title>
+        <!-- https://lor.mobalytics.gg/?src=home -->
+    </head>
+    <body>
+        <header> <!-- fixed -->
+            <nav>
+                <ul class="horizontal">
+                    <li>logo</li>
+                    <li>juegos</li>
+                    <li>new cards</li>
+                    <li>wiki</li>
+                    <li>...</li>
+                    <li>download app</li>
+                    <li>discord</li>
+                    <li>log in</li>
+                    <li>idioma</li>
+                    <li></li><!--colapse-->
+                </ul>
+            </nav>
+            <aside>
+                <nav>
+                    <ul class="vertical">
+                        <h2>Fetured decks</h2>
+                        <div>deck1</div>
+                        <div>deck2</div>
+                        <div>deck3</div>
+                        <div>deck4</div>
+                        <div>deck5</div>
+                        <div>deck6</div>
+                        <div>deck7</div>
+                        <div>deck8</div>
+                        <div>deck9</div>
+                        <div>deck10</div>
+                    </ul>
+                </nav>
+            </aside>
+        </header>
+        <main>
+            <section class="hero"></section>
+            <section>
+                <h2>Fetured decks</h2>
+                <div class="contenedor">
+                    <div>deck1</div>
+                    <div>deck2</div>
+                    <div>deck3</div>
+                    <div>deck4</div>
+                    <div>deck5</div>
+                    <div>deck6</div>
+                    <div>deck7</div>
+                    <div>deck8</div>
+                    <div>deck9</div>
+                    <div>deck10</div>    
+                </div>
+            </section>
+            <section class="blog">
+                <div class="patchnotes">patch</div>
+                <div class="blog1">b1</div>
+                <div class="blog2">b2</div>
+                <div class="blog3">b3</div>
+                <div class="blog4">4</div>
+            </section>
+            <form action="">
+                <input type="email">
+                <button></button>
+            </form>
+        </main>
+        <footer>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+            <ul></ul>
+        </footer>
+    </body>
+</html>

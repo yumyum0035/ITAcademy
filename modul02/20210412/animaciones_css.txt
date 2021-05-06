@@ -1,0 +1,108 @@
+Transiciones y animaciones
+
+
+Animaciones
+
+Una animación es un cambio visible de estado de una propiedad CSS durante un periodo de tiempo determinado.
+
+
+Propiedades CSS animables (en principio)
+https://www.w3schools.com/cssref/css_animatable.asp
+
+Todas las propiedades núméricas son animables
+
+
+En CSS se distinguen 2 tipos de transiciones:
+
+
+- Transition
+- Animation
+
+
+Transiciones
+--------------
+
+https://www.w3schools.com/cssref/css3_pr_transition.asp
+
+Las transiciones CSS permiten cambiar los valores de las propiedad durante un período determinado.
+Solo visualizan un cambio, de principio a fin.
+
+Es necesario especificar: 
+
+- La propiedad CSS (pueden ser varias)
+- La duración del efecto, si no se especifica la duración será 0 y no se verá la transición.
+
+
+transition (short-end)
+
+transition-property - Propiedad que se va a animar (obligatoria) - all(no recomendable) - none - propiedad (más usada)
+
+transition-duration - Duración de la transición (obligatoria) - valor en segundos “s” o milisegundos”ms”
+
+transition-delay - retraso antes de empezar
+
+
+transition-timing-function - curva de velocidad del efecto de transición
+
+                linear - la misma velocidad de principio a fin                                 (0,0,1,1)
+                ease - inicio lento, luego rápido, luego termina lentamente                 (0.25,0.1,0.25,1)
+                ease-in - inicio lento                                                                        (0.42,0,1,1)
+                ease-out - final lento                                                                        (0,0,0.58,1)
+                ease-in-out - inicio y un final lentos                                                (0.42,0,0.58,1)
+                cubic-bezier(n,n,n,n) - Valores propios en una función cubic-bezier
+                
+                step-start - cambio al comienzo del intervalo (1, start) 
+                step-end - cambio al final del intervalo  (1, end) 
+                steps(intervalo,start|end) steps(8, start)
+
+
+Animaciones
+--------------
+Las animaciones se activan al cargar la pagina (usando solo CSS, con javascript se puede cambiar)
+
+animation
+https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+animation - shortend
+
+animation-name - nombre de la animación (obligatorio)
+
+animation-duration - duración  (obligatorio)
+
+animation-delay - retraso antes de empezar
+
+animation-iteration-count - número de repeticiones (numero o infinite;
+
+animation-timing-function - curva de velocidad del efecto de transición
+
+animation-direction - dirección de reproducción
+
+        normal- hacia delante (por defecto)
+        reverse - empieza al reves hacia atrás
+        alternate - hacia adelante y hacia atrás
+        alternate-reverse - hacia atrás y hacia adelante
+
+animation-fill-mode - define el estilo del elemento cuando no se reproduce la animación
+                
+        none- Valor por defecto - no aplica ningun estilo (dejará el objeto como estaba antes de empezar
+        forwards - conserva el estilo del último fotograma clave
+        backwards - conserva el estilo del primer fotograma clave
+        both - seguirá las reglas tanto hacia adelante como hacia atrás, extendiendo las propiedades de la animación
+
+animation-play-state - especifica si la animación se está ejecutando o en pausa (se usa con Javascript) valores: running - paused
+
+
+
+
+@keyframes - Establece las diferentes fases de las animaciones (obligatorio) Contienen los estilos
+
+https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+
+
+
+Enlaces interesantes
+------------------------
+
+https://csstriggers.com/
+
+https://css-tricks.com

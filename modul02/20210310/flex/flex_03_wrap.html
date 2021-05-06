@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+<head>  
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+  <style>
+    /*** ESTRUCTURA ***/
+    /** Envolvent o multilinía
+      flex-wrap: nowrap;  (Per defecte) Fa flexibles els fills idependentment de l'amplada
+      flex-wrap: wrap;  Si no hi cap salta un element de línia.
+      flex-wrap: wrap-reverse;  Si no hi cap salta un element de línia i canvia l’ordre de la linia, no dels elements
+    **/
+    html { font-size: 16px; }
+    * { box-sizing: border-box; }
+    main { background: #cecece; } 
+
+    article {
+      display: flex;
+      padding: 5px;
+    }
+
+    /* flex-flow controla flex-direction y flex-wrap todo junto
+      ejemplo:
+      flex-flow: row wrap;
+      flex-flow: column nowrap;
+    */
+
+    article.wrap { /* se encogen de manera proporcional al ancho de su contenedor, si no has definido una anchura fija */
+      flex-wrap: wrap;
+    }
+
+    article.nowrap { /* no se encogen, ocupan el ancho de su contenedor*/
+      flex-wrap: nowrap;
+      
+    }
+
+    article.wrap-reverse { /* se encogen de manera proporcional al ancho de su contenedor, si no has definido una anchura fija, en dirección de derecha a izquierda*/
+      flex-wrap: wrap-reverse;
+    }
+ 
+    section { /* si no se especifica el ancho de la section, el tamaño se adaptará al texto */
+      /* width:400px; */
+      background: #9bc5e0;
+      border: 1px solid #fff;
+      color: white;
+      margin: 5px;
+    }
+   
+    /*** ESTRUCTURA sense relació amb flex box ***/
+    body, section  { padding:20px; }
+
+    /*** TIPOGRAFIA ***/
+    body { font-family: Arial, Helvetica, sans-serif; }
+
+  </style>  
+
+</head>
+
+
+ <body>
+    <main> 
+      <article class="wrap">
+        <section>  
+          Flex Item 1: wrap
+        </section>
+
+        <section>  
+          Flex Item 2: wrap
+        </section>
+
+        <section>  
+            Flex Item 3: wrap
+        </section>
+
+        <section>  
+          Flex Item 4: wrap
+        </section>
+      </article>
+
+      <article class="nowrap">
+        <section>  
+          Flex Item 1: nowrap
+        </section>
+
+        <section>  
+          Flex Item 2: nowrap
+        </section>
+
+        <section>  
+            Flex Item 3: nowrap
+        </section>
+
+        <section>  
+          Flex Item 4: nowrap
+        </section>
+      </article>
+
+      <article class="wrap-reverse">
+        <section>  
+          Flex Item 1: wrap-reverse
+        </section>
+
+        <section>  
+          Flex Item 2: wrap-reverse
+        </section>
+
+        <section>  
+            Flex Item 3: wrap-reverse
+        </section>
+
+        <section>  
+          Flex Item 4: wrap-reverse
+        </section>
+      </article>
+    </main>
+
+  </body>  
+</html>

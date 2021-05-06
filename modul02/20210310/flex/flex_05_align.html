@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+    <style>
+      /** align-items
+
+        align-items - alineació eix secundari
+
+        S'utilitza per alinear els ítems en l'eix secundari si hi ha espai suficient
+
+        align-items: stretch; 
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        align-items: baseline; 
+              
+        ***** Alineació del element seleccionat 
+        align-self: auto | stretch | center | flex-start | flex-end | baseline
+
+      **/
+      html { font-size: 16px; }
+      * { box-sizing: border-box; }
+      body { 
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+      }
+
+      main { background: #e0e0e0; } 
+
+      article { /* para que se vea el align-items se tiene que editar el eje secundario, en este caso, la altura, del contenedor donde estan los elementos afectados por flex */
+        display: flex;
+        padding: 5px;
+        height: 150px;
+        outline: 1px solid white;
+      }
+
+      article.flex-start { /* alinea al principio del eje secundario (vertical en este caso) */
+        align-items: flex-start;
+      }
+
+      article.flex-end { /* alinea al final del eje secundario (vertical en este caso) */
+        align-items: flex-end;
+      }
+
+      article.center { /* alinea al centro */
+        align-items: center;
+      }
+
+      article.stretch { /* (per defecte) estirament */
+        align-items: stretch; 
+      }
+
+      article.baseline { 
+        /* baseline alinea en funcion del principio del elemento mas grande. (si es justify o align cambia segun el eje principal o secundario) si todos son iguales, no se ve la diferencia entre baseline y flex-start */
+        align-items: baseline; 
+      }   
+
+      section { /* si no se especifica el ancho de la section, el tamaño se adaptará al texto */
+        /* width:400px; */
+        background: #9bc5e0;
+        border: 1px solid #fff;
+        color: white;
+        margin: 5px;
+        padding: 20px;
+      }
+
+      .bigger { /*sirve para ver bien la diferencia entre flex-start y baseline*/
+        font-size: 2rem;
+      }
+
+      .align-self { /* alinea el elemento independientemente del resto de elementos dentro de un mismo contenedor. un special snowflake que se alinea solo.*/
+        align-self: center;
+      }
+
+    </style>  
+
+  </head>
+
+  <body>
+      <main> 
+        <article class="flex-start">
+          <section class="bigger">  
+            Flex Item 1: flex-start
+          </section>
+
+          <section>  
+            Flex Item 2: flex-start
+          </section>
+
+          <section>  
+              Flex Item 3: flex-start
+          </section>
+
+          <section>  
+            Flex Item 4: flex-start
+          </section>
+        </article>
+
+        <article class="flex-end">
+          <section>  
+            Flex Item 1: flex-end
+          </section>
+
+          <section>  
+            Flex Item 2: flex-end
+          </section>
+
+          <section>  
+              Flex Item 3: flex-end
+          </section>
+
+          <section>  
+            Flex Item 4: flex-end
+          </section>
+        </article>
+
+        <article class="center">
+          <section>  
+            Flex Item 1: center
+          </section>
+
+          <section>  
+            Flex Item 2: center
+          </section>
+
+          <section>  
+              Flex Item 3: center
+          </section>
+
+          <section>  
+            Flex Item 4: center
+          </section>
+        </article>
+
+        <article class="stretch">
+          <section>  
+            Flex Item 1: stretch
+          </section>
+
+          <section>  
+            Flex Item 2: stretch
+          </section>
+
+          <section>  
+              Flex Item 3: stretch
+          </section>
+
+          <section>  
+            Flex Item 4: stretch
+          </section>
+        </article>
+
+        <article class="baseline"> <!-- and align-self -->
+          <section class="bigger">  
+            Flex Item 1: baseline
+          </section>
+
+          <section>  
+            Flex Item 2: baseline
+          </section>
+
+          <section class="align-self">  
+            Flex Item 3: align-self: center
+          </section>
+
+          <section>  
+            Flex Item 4: baseline
+          </section>
+        </article>
+      </main>
+
+  </body>  
+</html>

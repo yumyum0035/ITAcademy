@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+    <title>Document</title>
+    <meta name="description" content=" ">
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <title>Estructura web - Nike </title>
+    <!-- https://www.nike.com/es/ -->
+
+    <style>
+        /* TEST */
+
+        * { outline: 1px solid orange; } 
+
+        /* --------------------------------------------------------- */
+
+        * {
+            box-sizing: border-box;
+            min-height: 100px;
+            padding: 10px !important ;
+            margin-bottom: 10px !important;
+            text-align: center;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        header div, header div div, header div nav{   
+            display: flex;
+            justify-content: stretch;
+            flex-grow: 1;
+        }
+
+        .equipate div,
+        .equipate ,
+        .liquid,
+        .tendencias ,
+        .tendencias div { display: grid; }
+        .equipate div, .tendencias div { grid-template-columns: repeat(4,1fr); }
+
+        .menus h2, .menus p { grid-column: 2 span; }
+
+        .liquid{ grid-template-columns: repeat(2,1fr); }
+
+        .liquid h2{ grid-column: 2 span; }
+
+        
+        /*****  MEDIA QUERIES *****/
+
+        @media (min-width: 576px) {}
+
+        @media (min-width: 768px) {}
+
+        @media (min-width: 992px) {}
+
+        @media (min-width: 1200px) {}
+    </style>
+</head>
+
+<body>
+
+    <header> 
+        <div>   
+            <div>
+            <div>logo</div>
+            <div>logo</div>
+            </div>
+
+            <nav>
+                <li>ayuda</li>
+                <li>Unete a nosotros</li>
+                <li>iniciar sesion</li>
+            </nav>
+        </div>
+
+
+        <div>
+            <div>logo</div>
+            <nav>
+                <li>Novedades</li>
+                <li>hombre</li>
+                <li>Mujer</li>
+                <li>Niño/a</li>
+            </nav>
+            <div>
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="buscar">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-basket"></i>
+            </div>
+        </div>
+    </header>
+
+   
+  
+    <div>   
+        <div>slider</div>
+        <div>rebaja</div>
+    </div>
+    
+    <main>
+        Novedades
+    </main>
+        
+    <div class="equipate">
+        <div class="menus">
+            <h2>Equipate</h2>
+            <p>ver todo</p>
+        </div>
+        
+        <div class="columnas">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>    
+    </div>
+   
+    <div class="liquid">
+    
+        <h2>Liquid </h2>
+        
+        
+        <div></div>
+        <div></div>
+        
+    </div>
+    
+    <div class="tendencias">
+        <div class="menus">
+            <h2>tendencias</h2>
+            <p>ver todo</p>
+        </div>
+        
+        <div class="columnas">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>   
+        
+    </div>
+
+
+    <footer>
+        <nav>
+        </nav>
+        <div></div>
+        
+    </footer>
+
+
+
+</body>
+</html>

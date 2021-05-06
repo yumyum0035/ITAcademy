@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+    <style>  
+
+      /*** ESTRUCTURA ***/
+
+      /** Propietat Display 
+        Per defecte son "block" els elements DIV o "Divs semàntics"
+        i "inline" als elements "d'intre d'un element de text":  <span> <a> <img>
+      **/
+
+      main {
+        overflow: auto;
+        display: flex; /* anula el float*/
+      }
+
+      .esquerra { float:left; }
+
+      .dreta { float: right; }
+
+      /*** ESTRUCTURA sense relació amb flex box ***/
+      body, section { padding: 20px; }
+
+
+      /*** TIPOGRAFIA ***/
+      body { font-family: Arial, Helvetica, sans-serif; }
+
+
+      /*** ESTETICA ***/
+      main { background: LightGray;}
+
+      section {
+        background: orange;
+        border: 1px solid #000;
+      }
+      
+    </style>
+
+</head>
+
+ <body>
+    <main> 
+
+      <section class="esquerra">  
+        Flex Item 1
+      </section>
+      
+      <section  class="dreta">  
+        Flex Item 2
+      </section>
+
+    </main>
+  </body>  
+</html>

@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+<head>  
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+
+  <style>
+    /*** ESTRUCTURA ***/
+    /** flex-grow
+      especifica quant creixerà l'element en relació amb la resta dels elements flexibles dins del mateix contenidor.
+      Aquest número es una fracció del espai buit (afegeix mes text a la primera secció per comprobar-ho).
+
+      flex-flex-grow: 0; Valor per defecte ( no creix )
+      flex-flex-grow: 1; 
+      2, 3, 4, etc... ( admet decimals -> 0.5 )
+
+    **/
+    html { font-size: 16px; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+
+    main { background: #cecece; } 
+
+    article {
+      display: flex;
+      padding: 5px;
+    }
+ 
+    section { 
+      background: #9bc5e0;
+      border: 1px solid #fff;
+      color: white;
+      margin: 5px;
+      padding:20px;
+    }
+
+    section:nth-child(1) { flex-grow:0; }
+    section:nth-child(2) { flex-grow:1; }
+    section:nth-child(3) { flex-grow:2; }
+    section:nth-child(4) { flex-grow:3; }
+
+  </style>  
+
+</head>
+
+
+ <body>
+    <main> 
+      <article class="grow">
+        <section>  
+          Flex Item 1: grow: 0 (default)
+        </section>
+
+        <section>  
+          Flex Item 2: grow: 1
+        </section>
+
+        <section>  
+            Flex Item 3: grow: 2
+        </section>
+
+        <section>  
+          Flex Item 4: grow: 3
+        </section>
+      </article>
+
+    </main>
+
+  </body>  
+</html>

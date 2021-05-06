@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>    
+    <title>Viewport</title> 
+    <meta charset="UTF-8">
+    <meta name="title" content="Títol de la WEB">
+    <meta name="description" content="Descripció de la pàgina">
+
+<!-- VIEWPORT   -->
+      
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+      
+<!-- RESET CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />     
+  
+      
+<style>
+
+/**---------------- Estructura ----------------**/
+
+*{
+    box-sizing: border-box;
+}
+body { padding: 0 20px; }
+
+
+h1, p {padding: 20px 0 0 0;}
+    
+header { 
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 50vw;
+}    
+
+header p { padding: 10px;} 
+
+main{
+    border-top: 1px solid black;
+    border-bottom: 1px solid red;
+}
+
+main:nth-of-type(1){
+    margin-top: 100px;
+}
+    
+main { min-height: calc(100vh - 100px); }    /* Toda la altura menos el header*/
+    
+/**---------------- Tipografia ----------------**/
+
+    
+html { font-size: 18px; }
+    
+    
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+p  { font-size: 1.2rem; } 
+   
+h1, h2, header { text-align: center; }   
+    
+    
+/**---------------- Estetica ----------------**/   
+    main { background: pink; }
+    .blue{
+        background: lightcyan;
+    }
+    .coral{
+        background: coral;
+    }
+    header { background: orange;}
+
+
+</style>
+
+</head>
+
+<body>
+
+    <header> <p>Aixo es el header</p></header>
+
+    <main> 
+  
+        <h1>Titol H1</h1>
+        
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+
+    </main>
+
+
+    <main class="blue" id="dos"> 
+  
+        <h1>Titol H1</h1>
+        
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+
+    </main>
+
+    <main class="coral" id="tres"> 
+  
+        <h1>Titol H1</h1>
+        
+        <p>Rutrum mollis tristique vitae himenaeos torquent eleifend potenti montes, volutpat lectus proin donec penatibus sed mattis ridiculus, in enim commodo magna litora lacus feugiat. Ultrices semper ut leo diam proin mus venenatis, ad potenti aliquam in posuere lectus cras ridiculus, luctus malesuada rutrum laoreet class justo. Per dignissim aliquam class euismod morbi aenean massa, ac suscipit lobortis eu primis vel convallis, ridiculus nam ad turpis nisi et.</p>
+
+    </main>
+
+
+
+     
+
+     
+  </body>  
+</html>

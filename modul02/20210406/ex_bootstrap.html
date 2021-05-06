@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+ 
+        <!-- reset -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' />
+ 
+        <!-- font awesome -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous' />
+ 
+        <!-- css Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+        <!-- bundle JS Bootstrap 5 --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+        <!-- css -->
+        <link rel='stylesheet' href='style.css'>  
+ 
+        <title>Bootstrap ejercicio</title>
+        <!-- https://yevgenysim.github.io/shopper/overview.html -->
+    </head>
+    <body>
+        <header>
+            <div class="logo">Shopper</div>
+            <nav>
+                <a href="#">home</a>
+                <a href="#">catalog</a>
+                <a href="#">shop</a>
+                <a href="#">pages</a>
+                <a href="#">blog</a>
+                <a href="#">docs</a>
+            </nav>
+
+            <button class="btn btn-primary">buy now for 49$</button>
+        </header>
+
+        <main>
+            <section class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-5 col-lg-6 col-xl-7 order-md-2">
+                        <img class="img-fluid minw-md-200 minw-lg-125 mb-9 mb-md-0" src="img/devices-1.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-6 col-xl-5 order-md-1">
+                        <h1 class="mb-4">Flexible E-Commerce Bootstrap template</h1>
+                        <p class="mb-7 font-size-lg text-gray-500">Shopper is a beautiful, simple and flexible e-commerce template built on top of Bootstrap. It includes dozens of components and pages you can use “as is” or customize to build exactly what you need.</p>
+                        <a class="btn btn-primary" href="#pages">Find out more</a>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h2>8 homepage variations</h2>
+                        <p>Including a landing page with an anchor navigation.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h2>30+ support pages</h2>
+                        <p>Shop, account, blog and other inner pages.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h2>10+ navigation variations</h2>
+                        <p>Multiple horizontal and vertical navigation options.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h2>8 product cards variations</h2>
+                        <p>To showcase and sell anything you want.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-9 col-xl-6 text-center">
+                        <h2 class="mb-3" id="pages">Homepages</h2>
+                        <p class="mb-10 font-size-lg text-gray-500">8 homepage variations including a sample landing page with anchor navigation.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-default.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Default</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-classic.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Classic</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-fashion.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Fashion</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-boxed.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Boxes</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-simple.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Simple</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-asymmetric.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Asymmetric</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-sidenav.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Sidenav</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-4">
+                        <img class="card-img-top shadow shadow-hover" src="img/index-landing.png" alt="">
+                        <div class="card-body text-center">
+                            <strong class="font-size-lg">
+                                <h3>Landing</h3>
+                            </strong>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+            
+        </main>
+
+        <footer></footer>
+    </body>
+</html>
